@@ -1,6 +1,31 @@
 @use "../global" as *;
 
 /*!
-component > kv
+component > page-kv
 ------------------------------
 */
+.page-kv {
+  width: 100%;
+  height: auto;
+  padding-left: 18px;
+
+  &__inner {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  // max-width: 1080pxのコンテナを指定
+
+  &__title {
+    font-family: $font-family-en;
+    text-transform: uppercase;
+    color: $font-white;
+    font-size: 26px;
+    letter-spacing: 2.08px;
+
+    @include mq(md) {
+      font-size: 36px;
+      letter-spacing: 2.88px;
+    }
+  }
+}

@@ -4,3 +4,25 @@
 layout > container
 ------------------------------
 */
+
+.container-s,
+.container-m,
+.container-l {
+  width: 90%;
+  margin: 0 auto;
+}
+
+// 960px
+.container-s {
+  max-width: $content-width-s;
+}
+
+// 1080px
+.container-m {
+  max-width: $content-width-m;
+}
+
+// 1200px
+.container-l {
+  max-width: $content-width-l;
+}

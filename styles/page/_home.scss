@@ -174,7 +174,6 @@ page > home
     margin-bottom: 10px;
     text-align: center;
 
-    color: $font-accent;
     background-color: rgba($bg-white, 0.9);
     font-size: 1.5rem; // 24px
     font-weight: 700;
@@ -316,11 +315,11 @@ page > home
   }
 
   &__item {
-    border-bottom: 1px solid $border;
+    // border-bottom: 1px solid $border;
     padding: 22px 0;
 
     &:first-child {
-      border-top: 1px solid $border;
+      // border-top: 1px solid $border;
     }
   }
 
@@ -340,7 +339,7 @@ page > home
 
   &__date {
     font-size: 0.8125rem; // 13px
-    color: $font-date;
+    // color: $font-date;
   }
 }
 
@@ -374,8 +373,8 @@ page > home
 
       width: 10px;
       height: 10px;
-      border-top: 2px solid $border;
-      border-right: 2px solid $border;
+      // border-top: 2px solid $border;
+      // border-right: 2px solid $border;
       transform: translateY(-50%) rotate(135deg);
       transition: all 0.3s ease-in-out;
     }
@@ -431,10 +430,10 @@ page > home
   }
 
   &__item {
-    border-bottom: 1px solid $border;
+    // border-bottom: 1px solid $border;
 
     &:first-child {
-      border-top: 1px solid $border;
+      // border-top: 1px solid $border;
     }
 
     font-size: 1.125rem;

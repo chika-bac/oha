@@ -4,3 +4,20 @@
 component > title
 ------------------------------
 */
+
+.heading2 {
+  font-size: 18px;
+
+  @include mq(md) {
+    font-size: 24px;
+  }
+}
+
+.heading2-en {
+  font-size: 24px;
+  font-family: $font-family-en;
+
+  @include mq(md) {
+    font-size: 32px;
+  }
+}

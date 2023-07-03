@@ -1,0 +1,18 @@
+@use "../global" as *;
+
+/*!
+layout > section
+------------------------------
+*/
+.section {
+  // セクション間の上下余白
+  padding: 94px 0;
+
+  &-body {
+    // h2 title - bodyの余白
+    padding-top: 94px;
+
+    width: 90%;
+    margin: 0 auto;
+  }
+}

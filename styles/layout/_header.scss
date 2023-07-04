@@ -4,3 +4,84 @@
 layout > header
 ------------------------------
 */
+.header {
+  background-color: $bg-white;
+
+  font-size: 12px;
+  letter-spacing: 0.06rem;
+
+  &__inner {
+    padding: 16px 0;
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
+    margin-left: auto;
+    margin-right: 0;
+    align-items: center;
+  }
+
+  &__logo {
+    width: 120px;
+    margin-right: auto;
+  }
+
+  &__btn {
+    width: 140px;
+    padding: 14px 10px 14px calc(10px + 0.06rem);
+    background-color: $bg-primary;
+  }
+}
+
+/*!
+layout > header > pc-nav
+------------------------------
+*/
+.pc-nav {
+  display: none;
+
+  font-size: 14px;
+  letter-spacing: 0.07rem;
+  text-transform: uppercase;
+  color: $font-primary;
+
+  &__inner {
+    display: flex;
+    gap: 2rem;
+    margin-right: 2rem;
+  }
+
+  @include mq(md) {
+    display: block;
+  }
+}
+
+/*!
+layout > header > sp-nav
+------------------------------
+*/
+.sp-nav {
+  background-color: $bg-primary;
+  color: $font-white;
+
+  @include mq(md) {
+    display: none;
+  }
+
+  &__inner {
+    width: 90%;
+    display: flex;
+    margin: 0 auto;
+  }
+
+  &__item {
+    text-transform: uppercase;
+    margin: 14px 0;
+    position: relative;
+    flex-grow: 1;
+    text-align: center;
+
+    & + li {
+      border-left: 1px solid white;
+    }
+  }
+}

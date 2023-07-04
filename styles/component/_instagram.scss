@@ -5,4 +5,16 @@ component > instagram
 ------------------------------
 */
 .instagram {
+  background-color: $bg-secondary;
+
+  &__inner {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 9px 8px;
+
+    @include mq(md) {
+      flex-wrap: nowrap;
+      gap: 32px;
+    }
+  }
 }

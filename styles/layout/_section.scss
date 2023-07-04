@@ -13,11 +13,10 @@ layout > section
   }
 
   &-body {
-    // h2 title - bodyの余白
-    padding-top: 40px;
+    padding: 40px 0;
 
     @include mq(md) {
-      padding-top: 48px;
+      padding: 48px 0;
     }
   }
 }

@@ -233,7 +233,7 @@ component > button
 ------------------------------
 */
 .btn {
-  display: inline-block;
+  display: block;
   font-family: "Montserrat", sans-serif;
   padding: 18px 10px;
   line-height: 1;
@@ -258,6 +258,7 @@ component > button
   content: "";
   width: 24px;
   height: 1px;
+  background-color: #ffffff;
 }
 @media screen and (min-width: 768px) {
   .btn::after {
@@ -267,6 +268,9 @@ component > button
 .btn--white {
   color: #000000;
   background-color: #ffffff;
+}
+.btn--white::after {
+  background-color: #000000;
 }
 .btn--centered {
   margin: 0 auto;
@@ -278,6 +282,7 @@ component > title
 */
 .heading2 {
   font-size: 18px;
+  text-align: center;
 }
 @media screen and (min-width: 768px) {
   .heading2 {
@@ -288,10 +293,16 @@ component > title
 .heading2-en {
   font-size: 24px;
   font-family: "Montserrat", sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.12rem;
+  padding-left: 0.12rem;
 }
 @media screen and (min-width: 768px) {
   .heading2-en {
     font-size: 32px;
+    letter-spacing: 0.16rem;
+    padding-left: 0.16rem;
   }
 }
 
@@ -303,13 +314,18 @@ component > instagram
   background-color: #efede9;
 }
 .instagram__inner {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 9px 8px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px 9px;
 }
 @media screen and (min-width: 768px) {
   .instagram__inner {
-    flex-wrap: nowrap;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 16px;
+  }
+}
+@media screen and (min-width: 1080px) {
+  .instagram__inner {
     gap: 32px;
   }
 }

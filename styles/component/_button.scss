@@ -6,14 +6,13 @@ component > button
 */
 
 .btn {
-  display: inline-block;
+  display: block;
   font-family: $font-family-en;
   padding: 18px 10px;
   line-height: 1;
   width: 220px;
   text-transform: uppercase;
   text-align: center;
-
   position: relative;
 
   color: $font-white;
@@ -32,6 +31,7 @@ component > button
     content: "";
     width: 24px;
     height: 1px;
+    background-color: $font-white;
 
     @include mq(md) {
       width: 28px;
@@ -42,10 +42,14 @@ component > button
   &--white {
     color: $font-base;
     background-color: $bg-white;
+
+    &::after {
+      background-color: $font-base;
+    }
   }
 
   // 中央配置
-  &--centered{
+  &--centered {
     margin: 0 auto; // 中央配置
   }
 }

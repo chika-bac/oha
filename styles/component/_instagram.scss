@@ -8,12 +8,15 @@ component > instagram
   background-color: $bg-secondary;
 
   &__inner {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 9px 8px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px 9px;
 
     @include mq(md) {
-      flex-wrap: nowrap;
+      grid-template-columns: repeat(6, 1fr);
+      gap: 16px;
+    }
+    @include mq(lg) {
       gap: 32px;
     }
   }

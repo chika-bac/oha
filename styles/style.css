@@ -400,6 +400,10 @@ layout > header
   width: 140px;
   padding: 14px 10px 14px calc(10px + 0.06rem);
   background-color: #524433;
+  color: #ffffff;
+  text-transform: uppercase;
+  line-height: 1;
+  text-align: center;
 }
 
 /*!
@@ -468,26 +472,20 @@ layout > footer
     padding: 80px 0 24px;
   }
 }
-.footer__shoplist {
-  display: flex;
-  gap: 10px;
-  flex-wrap: wrap;
-  margin-top: 24px;
+.footer__logo {
+  width: 120px;
+  margin: 0 auto;
 }
 @media screen and (min-width: 768px) {
-  .footer__shoplist {
-    margin-top: 40px;
+  .footer__logo {
+    width: 200px;
   }
 }
-.footer__shoplist:not(:last-child)::after {
-  content: "/";
-  margin-left: 10px;
-}
-.footer__company {
+.footer__address {
   margin: 24px 0 64px;
 }
 @media screen and (min-width: 768px) {
-  .footer__company {
+  .footer__address {
     margin: 24px 0 80px;
   }
 }
@@ -495,6 +493,23 @@ layout > footer
   font-size: 12px;
   text-align: center;
   display: block;
+}
+
+.shoplist {
+  display: flex;
+  gap: 0 0.8rem;
+  flex-wrap: wrap;
+  margin-top: 24px;
+  justify-content: center;
+}
+.shoplist__item:not(:first-child):before {
+  content: "/";
+  padding-right: 0.8rem;
+}
+@media screen and (min-width: 768px) {
+  .shoplist {
+    margin-top: 40px;
+  }
 }
 
 /*!

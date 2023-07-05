@@ -8,12 +8,13 @@ layout > header
   background-color: $bg-white;
   font-size: 12px;
   letter-spacing: 0.06rem;
+  font-family: $font-family-en;
 
   &__inner {
     padding: 16px 0;
     display: flex;
     justify-content: space-between;
-    width: 95%;
+    padding-left: 24px;
     margin-left: auto;
     margin-right: 0;
     align-items: center;
@@ -22,6 +23,10 @@ layout > header
   &__logo {
     width: 120px;
     margin-right: auto;
+
+    @include mq(md) {
+      width: 200px;
+    }
   }
 
   &__btn {
@@ -32,6 +37,17 @@ layout > header
     text-transform: uppercase;
     line-height: 1;
     text-align: center;
+
+    @include mq(md) {
+      width: 160px;
+      font-size: 16px;
+      letter-spacing: 0.08rem;
+      padding: 14.5px 10px 14.5px calc(10px + 0.08rem);
+    }
+
+    @include mq(lg) {
+      width: 170px;
+    }
   }
 }
 
@@ -47,14 +63,22 @@ layout > header > pc-nav
   text-transform: uppercase;
   color: $font-primary;
 
-  &__inner {
-    display: flex;
-    gap: 2rem;
-    margin-right: 2rem;
-  }
-
   @include mq(md) {
     display: block;
+  }
+
+  &__inner {
+    display: flex;
+
+    @include mq(md) {
+      gap: 1.1rem;
+      margin-right: 1.1rem;
+    }
+
+    @include mq(lg) {
+      gap: 2rem;
+      margin-right: 2rem;
+    }
   }
 }
 

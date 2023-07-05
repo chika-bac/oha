@@ -324,7 +324,7 @@ component > instagram
     gap: 16px;
   }
 }
-@media screen and (min-width: 1080px) {
+@media screen and (min-width: 992px) {
   .instagram__inner {
     gap: 32px;
   }
@@ -382,12 +382,13 @@ layout > header
   background-color: #ffffff;
   font-size: 12px;
   letter-spacing: 0.06rem;
+  font-family: "Montserrat", sans-serif;
 }
 .header__inner {
   padding: 16px 0;
   display: flex;
   justify-content: space-between;
-  width: 95%;
+  padding-left: 24px;
   margin-left: auto;
   margin-right: 0;
   align-items: center;
@@ -395,6 +396,11 @@ layout > header
 .header__logo {
   width: 120px;
   margin-right: auto;
+}
+@media screen and (min-width: 768px) {
+  .header__logo {
+    width: 200px;
+  }
 }
 .header__btn {
   width: 140px;
@@ -404,6 +410,19 @@ layout > header
   text-transform: uppercase;
   line-height: 1;
   text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .header__btn {
+    width: 160px;
+    font-size: 16px;
+    letter-spacing: 0.08rem;
+    padding: 14.5px 10px 14.5px calc(10px + 0.08rem);
+  }
+}
+@media screen and (min-width: 992px) {
+  .header__btn {
+    width: 170px;
+  }
 }
 
 /*!
@@ -417,14 +436,24 @@ layout > header > pc-nav
   text-transform: uppercase;
   color: #524433;
 }
-.pc-nav__inner {
-  display: flex;
-  gap: 2rem;
-  margin-right: 2rem;
-}
 @media screen and (min-width: 768px) {
   .pc-nav {
     display: block;
+  }
+}
+.pc-nav__inner {
+  display: flex;
+}
+@media screen and (min-width: 768px) {
+  .pc-nav__inner {
+    gap: 1.1rem;
+    margin-right: 1.1rem;
+  }
+}
+@media screen and (min-width: 992px) {
+  .pc-nav__inner {
+    gap: 2rem;
+    margin-right: 2rem;
   }
 }
 
@@ -578,7 +607,7 @@ page > home
     padding-left: 18px;
   }
 }
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1200px) {
   .about__inner {
     padding-left: 120px;
   }
@@ -605,7 +634,7 @@ page > home
     width: max-content;
   }
 }
-@media screen and (min-width: 1080px) {
+@media screen and (min-width: 992px) {
   .about__copy {
     font-size: 2.5rem;
   }
@@ -646,7 +675,7 @@ page > home
     right: 0;
   }
 }
-@media screen and (min-width: 1080px) {
+@media screen and (min-width: 992px) {
   .about__img {
     top: -7%;
   }
@@ -664,7 +693,7 @@ page > home
     width: 600px;
   }
 }
-@media screen and (min-width: 1080px) {
+@media screen and (min-width: 992px) {
   .about__item-lg {
     width: 786px;
   }
@@ -679,7 +708,7 @@ page > home
     margin-left: auto;
   }
 }
-@media screen and (min-width: 1080px) {
+@media screen and (min-width: 992px) {
   .about__item-sm {
     width: 393px;
   }

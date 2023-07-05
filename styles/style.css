@@ -571,6 +571,70 @@ concept
 }
 
 /*!
+menu
+------------------------------
+*/
+.top-menu {
+  background-image: url(../../images/menu/pic-menu-coffee03.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #ffffff;
+  position: relative;
+  overflow: hidden;
+  z-index: 0;
+}
+.top-menu::before {
+  content: "";
+  position: absolute;
+  top: -5px;
+  bottom: -5px;
+  left: -5px;
+  right: -5px;
+  background: inherit;
+  filter: brightness(60%) blur(8px);
+  z-index: -1;
+}
+.top-menu__inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 40px;
+}
+@media screen and (min-width: 768px) {
+  .top-menu__inner {
+    flex-direction: row;
+    gap: 64px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .top-menu__list {
+    width: 50%;
+  }
+}
+.top-menu__title {
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  font-size: 18px;
+  margin-bottom: 24px;
+  letter-spacing: 0.09rem;
+}
+@media screen and (min-width: 768px) {
+  .top-menu__title {
+    font-size: 20px;
+    margin-bottom: 22px;
+    letter-spacing: 0.1rem;
+  }
+}
+.top-menu__item {
+  line-height: 2;
+  border-bottom: 1px solid #ffffff;
+  padding: 8px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+/*!
 page > concept
 ------------------------------
 */

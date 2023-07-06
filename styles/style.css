@@ -207,6 +207,9 @@ component > page-kv
 .page-kv {
   width: 100%;
   height: 30vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 @media screen and (min-width: 768px) {
   .page-kv {
@@ -736,9 +739,6 @@ page-kv
 */
 .page-kv-concept {
   background-image: url(../images/pic-top-concept.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
 .page-concept__text {
@@ -762,9 +762,76 @@ page-kv
 }
 
 /*!
-page > menu
+page-kv
 ------------------------------
 */
+.page-kv-menu {
+  background-image: url(../images/menu-page-kv.jpg);
+}
+
+.page-menu__title {
+  text-align: center;
+}
+.page-menu__title-main {
+  font-size: 16px;
+  margin-bottom: 24px;
+}
+@media screen and (min-width: 768px) {
+  .page-menu__title-main {
+    font-size: 20px;
+  }
+}
+.page-menu__title-sub span {
+  display: block;
+}
+.page-menu__inner {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+@media screen and (min-width: 768px) {
+  .page-menu__inner {
+    gap: 48px;
+  }
+}
+.page-menu__card {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  line-height: 1;
+}
+@media screen and (min-width: 768px) {
+  .page-menu__card {
+    flex-direction: row;
+    align-items: center;
+    gap: 48px;
+  }
+}
+.page-menu__img {
+  margin: 0;
+}
+.page-menu__name {
+  font-size: 16px;
+  margin-bottom: 12px;
+}
+@media screen and (min-width: 768px) {
+  .page-menu__name {
+    font-size: 20px;
+    margin-bottom: 16px;
+  }
+}
+.page-menu__price {
+  margin-bottom: 12px;
+}
+@media screen and (min-width: 768px) {
+  .page-menu__price {
+    margin-bottom: 24px;
+  }
+}
+.page-menu__detail {
+  line-height: 2;
+}
+
 /*!
 page > shop-list
 ------------------------------

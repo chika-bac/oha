@@ -1,6 +1,76 @@
 @use "../global" as *;
 
 /*!
-page > menu
+page-kv
 ------------------------------
 */
+.page-kv-menu {
+  background-image: url(../images/menu-page-kv.jpg);
+}
+
+.page-menu {
+  &__title {
+    text-align: center;
+  }
+  &__title-main {
+    font-size: 16px;
+    margin-bottom: 24px;
+
+    @include mq(md) {
+      font-size: 20px;
+    }
+  }
+  &__title-sub {
+    & span {
+      display: block;
+    }
+  }
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+
+    @include mq(md) {
+      gap: 48px;
+    }
+  }
+  &__card {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    line-height: 1;
+
+    @include mq(md) {
+      flex-direction: row;
+      align-items: center;
+      gap: 48px;
+    }
+  }
+
+  &__img {
+    margin: 0;
+  }
+
+  &__name {
+    font-size: 16px;
+    margin-bottom: 12px;
+
+    @include mq(md) {
+      font-size: 20px;
+      margin-bottom: 16px;
+    }
+  }
+
+  &__price {
+    margin-bottom: 12px;
+
+    @include mq(md) {
+      margin-bottom: 24px;
+    }
+  }
+
+  &__detail {
+    line-height: 2;
+  }
+}

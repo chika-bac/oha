@@ -1,6 +1,66 @@
 @use "../global" as *;
 
 /*!
-page > shop-list
+shop-list
 ------------------------------
 */
+.page-kv-shop-list {
+  background-image: url(../images/shoplist-page-kv.jpg);
+}
+
+.page-shop-list {
+  &__inner {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 40px;
+
+    @include mq(lg) {
+      grid-template-columns: repeat(2, 1fr);
+      row-gap: 48px;
+    }
+  }
+  &__card {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    @include mq(md) {
+      flex-direction: row;
+      gap: 24px;
+    }
+  }
+  &__img {
+    margin: 0;
+
+    @include mq(md) {
+      width: 53%;
+    }
+  }
+  &__name {
+    font-size: 16px;
+
+    @include mq(md) {
+      font-size: 20px;
+    }
+  }
+  &__detail {
+    font-size: 12px;
+
+    @include mq(md) {
+      font-size: 14px;
+    }
+
+    & span {
+      display: block;
+    }
+  }
+
+  &__tel {
+    font-family: $font-family-en;
+    font-size: 18px;
+
+    @include mq(md) {
+      font-size: 22px;
+    }
+  }
+}

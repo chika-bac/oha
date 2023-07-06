@@ -762,7 +762,7 @@ page-kv
 }
 
 /*!
-page-kv
+menu
 ------------------------------
 */
 .page-kv-menu {
@@ -833,9 +833,72 @@ page-kv
 }
 
 /*!
-page > shop-list
+shop-list
 ------------------------------
 */
+.page-kv-shop-list {
+  background-image: url(../images/shoplist-page-kv.jpg);
+}
+
+.page-shop-list__inner {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 40px;
+}
+@media screen and (min-width: 992px) {
+  .page-shop-list__inner {
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 48px;
+  }
+}
+.page-shop-list__card {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+@media screen and (min-width: 768px) {
+  .page-shop-list__card {
+    flex-direction: row;
+    gap: 24px;
+  }
+}
+.page-shop-list__img {
+  margin: 0;
+}
+@media screen and (min-width: 768px) {
+  .page-shop-list__img {
+    width: 53%;
+  }
+}
+.page-shop-list__name {
+  font-size: 16px;
+}
+@media screen and (min-width: 768px) {
+  .page-shop-list__name {
+    font-size: 20px;
+  }
+}
+.page-shop-list__detail {
+  font-size: 12px;
+}
+@media screen and (min-width: 768px) {
+  .page-shop-list__detail {
+    font-size: 14px;
+  }
+}
+.page-shop-list__detail span {
+  display: block;
+}
+.page-shop-list__tel {
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+}
+@media screen and (min-width: 768px) {
+  .page-shop-list__tel {
+    font-size: 22px;
+  }
+}
+
 /*!
 page > blog_archive
 ------------------------------

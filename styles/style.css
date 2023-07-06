@@ -524,19 +524,19 @@ layout > footer
   display: block;
 }
 
-.shoplist {
+.shop-list {
   display: flex;
   gap: 0 0.8rem;
   flex-wrap: wrap;
   margin-top: 24px;
   justify-content: center;
 }
-.shoplist__item:not(:first-child):before {
+.shop-list__item:not(:first-child):before {
   content: "/";
   padding-right: 0.8rem;
 }
 @media screen and (min-width: 768px) {
-  .shoplist {
+  .shop-list {
     margin-top: 40px;
   }
 }
@@ -635,6 +635,97 @@ menu
 }
 
 /*!
+shop-list
+------------------------------
+*/
+.top-shop-list__text {
+  text-align: center;
+  line-height: 2;
+  margin-bottom: 40px;
+}
+@media screen and (min-width: 768px) {
+  .top-shop-list__text {
+    margin-bottom: 48px;
+  }
+}
+.top-shop-list__text span {
+  display: block;
+}
+.top-shop-list__list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  place-items: center;
+  row-gap: 16px;
+}
+@media screen and (min-width: 768px) {
+  .top-shop-list__list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+.top-shop-list__item {
+  line-height: 1;
+  width: 155px;
+  padding: 16px 10px;
+  text-align: center;
+  background-color: #efede9;
+  border-radius: 100px;
+}
+@media screen and (min-width: 500px) {
+  .top-shop-list__item {
+    width: 200px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .top-shop-list__item {
+    width: 230px;
+  }
+}
+
+/*!
+blog
+------------------------------
+*/
+.top-blog__inner {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+@media screen and (min-width: 768px) {
+  .top-blog__inner {
+    flex-direction: row;
+    gap: 30px;
+  }
+}
+.top-blog__img {
+  margin-bottom: 16px;
+}
+@media screen and (min-width: 768px) {
+  .top-blog__img {
+    margin-bottom: 20px;
+  }
+}
+.top-blog__date {
+  font-family: "Montserrat", sans-serif;
+  color: #524433;
+  font-size: 12px;
+  letter-spacing: 0.06rem;
+}
+@media screen and (min-width: 768px) {
+  .top-blog__date {
+    font-size: 14px;
+    letter-spacing: 0.07rem;
+  }
+}
+.top-blog__title {
+  font-size: 18px;
+}
+@media screen and (min-width: 992px) {
+  .top-blog__title {
+    font-size: 22px;
+  }
+}
+
+/*!
 page > concept
 ------------------------------
 */
@@ -643,7 +734,7 @@ page > menu
 ------------------------------
 */
 /*!
-page > shoplist
+page > shop-list
 ------------------------------
 */
 /*!

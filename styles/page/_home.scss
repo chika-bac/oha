@@ -99,3 +99,93 @@ menu
     justify-content: space-between;
   }
 }
+
+/*!
+shop-list
+------------------------------
+*/
+.top-shop-list {
+  &__text {
+    text-align: center;
+    line-height: 2;
+    margin-bottom: 40px;
+    @include mq(md) {
+      margin-bottom: 48px;
+    }
+
+    & span {
+      display: block;
+    }
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    place-items: center;
+    row-gap: 16px;
+
+    @include mq(md) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  &__item {
+    line-height: 1;
+    width: 155px;
+    padding: 16px 10px;
+    text-align: center;
+    background-color: $bg-secondary;
+    border-radius: 100px;
+
+    @include mq(sm) {
+      width: 200px;
+    }
+
+    @include mq(md) {
+      width: 230px;
+    }
+  }
+}
+
+/*!
+blog
+------------------------------
+*/
+.top-blog {
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+
+    @include mq(md) {
+      flex-direction: row;
+      gap: 30px;
+    }
+  }
+  &__card {
+  }
+  &__img {
+    margin-bottom: 16px;
+    @include mq(md) {
+      margin-bottom: 20px;
+    }
+  }
+  &__date {
+    font-family: $font-family-en;
+    color: $font-primary;
+    font-size: 12px;
+    letter-spacing: 0.06rem;
+
+    @include mq(md) {
+      font-size: 14px;
+      letter-spacing: 0.07rem;
+    }
+  }
+  &__title {
+    font-size: 18px;
+
+    @include mq(lg) {
+      font-size: 22px;
+    }
+  }
+}

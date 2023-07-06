@@ -206,12 +206,17 @@ component > page-kv
 */
 .page-kv {
   width: 100%;
-  height: auto;
-  padding-left: 18px;
+  height: 30vh;
+}
+@media screen and (min-width: 768px) {
+  .page-kv {
+    height: 62vh;
+  }
 }
 .page-kv__inner {
+  width: 100%;
+  height: 100%;
   display: flex;
-  justify-content: flex-start;
   align-items: center;
 }
 .page-kv__title {
@@ -219,12 +224,12 @@ component > page-kv
   text-transform: uppercase;
   color: #ffffff;
   font-size: 26px;
-  letter-spacing: 2.08px;
+  letter-spacing: 0.13rem;
 }
 @media screen and (min-width: 768px) {
   .page-kv__title {
     font-size: 36px;
-    letter-spacing: 2.88px;
+    letter-spacing: 0.18rem;
   }
 }
 
@@ -388,7 +393,7 @@ layout > header
   padding: 16px 0;
   display: flex;
   justify-content: space-between;
-  padding-left: 24px;
+  width: 95%;
   margin-left: auto;
   margin-right: 0;
   align-items: center;
@@ -726,9 +731,36 @@ blog
 }
 
 /*!
-page > concept
+page-kv
 ------------------------------
 */
+.page-kv-concept {
+  background-image: url(../images/pic-top-concept.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.page-concept__text {
+  text-align: center;
+  line-height: 2;
+}
+.page-concept__copy {
+  font-size: 16px;
+  margin-bottom: 16px;
+}
+@media screen and (min-width: 768px) {
+  .page-concept__copy {
+    font-size: 20px;
+    margin-bottom: 32px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .page-concept__content span {
+    display: block;
+  }
+}
+
 /*!
 page > menu
 ------------------------------

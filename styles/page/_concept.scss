@@ -1,6 +1,37 @@
 @use "../global" as *;
 
 /*!
-page > concept
+page-kv
 ------------------------------
 */
+.page-kv-concept {
+  background-image: url(../images/pic-top-concept.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.page-concept {
+  &__text {
+    text-align: center;
+    line-height: 2;
+  }
+
+  &__copy {
+    font-size: 16px;
+    margin-bottom: 16px;
+
+    @include mq(md) {
+      font-size: 20px;
+      margin-bottom: 32px;
+    }
+  }
+
+  &__content {
+    & span {
+      @include mq(md) {
+        display: block;
+      }
+    }
+  }
+}

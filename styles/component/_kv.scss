@@ -6,26 +6,29 @@ component > page-kv
 */
 .page-kv {
   width: 100%;
-  height: auto;
-  padding-left: 18px;
+  height: 30vh;
+
+  @include mq(md) {
+    height: 62vh;
+  }
 
   &__inner {
+    width: 100%;
+    height: 100%;
     display: flex;
-    justify-content: flex-start;
     align-items: center;
   }
-  // max-width: 1080pxのコンテナを指定
 
   &__title {
     font-family: $font-family-en;
     text-transform: uppercase;
     color: $font-white;
     font-size: 26px;
-    letter-spacing: 2.08px;
+    letter-spacing: 0.13rem;
 
     @include mq(md) {
       font-size: 36px;
-      letter-spacing: 2.88px;
+      letter-spacing: 0.18rem;
     }
   }
 }

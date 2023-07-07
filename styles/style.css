@@ -1043,4 +1043,7 @@ blog_single
 /*!
 page > error
 ------------------------------
-*//*# sourceMappingURL=style.css.map */
+*/
+.page-kv-error {
+  background-image: url(../images/menu-page-kv.jpg);
+}/*# sourceMappingURL=style.css.map */

@@ -1,6 +1,53 @@
 @use "../global" as *;
 
 /*!
-page > blog_single
+blog_single
 ------------------------------
 */
+.page-kv-blog-single {
+  background-image: url(../images/menu-page-kv.jpg);
+}
+
+.page-blog-single {
+  &__article {
+  }
+  &__thumb {
+    width: 100%;
+    margin-bottom: 16px;
+
+    @include mq(md) {
+      margin-bottom: 42px;
+    }
+  }
+
+  &__date {
+    font-family: $font-family-en;
+    color: $font-primary;
+    font-size: 12px;
+    letter-spacing: 0.06rem;
+
+    @include mq(md) {
+      font-size: 14px;
+      letter-spacing: 0.07rem;
+    }
+  }
+  &__title {
+    font-size: 22px;
+    margin-bottom: 40px;
+
+    @include mq(md) {
+      font-size: 26px;
+      margin-bottom: 48px;
+    }
+  }
+  &__content {
+    line-height: 2;
+    & p:not(:last-child) {
+      margin-bottom: 32px;
+
+      @include mq(md) {
+        margin-bottom: 40px;
+      }
+    }
+  }
+}

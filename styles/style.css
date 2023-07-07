@@ -990,9 +990,56 @@ page > blog_archive
 }
 
 /*!
-page > blog_single
+blog_single
 ------------------------------
 */
+.page-kv-blog-single {
+  background-image: url(../images/menu-page-kv.jpg);
+}
+
+.page-blog-single__thumb {
+  width: 100%;
+  margin-bottom: 16px;
+}
+@media screen and (min-width: 768px) {
+  .page-blog-single__thumb {
+    margin-bottom: 42px;
+  }
+}
+.page-blog-single__date {
+  font-family: "Montserrat", sans-serif;
+  color: #524433;
+  font-size: 12px;
+  letter-spacing: 0.06rem;
+}
+@media screen and (min-width: 768px) {
+  .page-blog-single__date {
+    font-size: 14px;
+    letter-spacing: 0.07rem;
+  }
+}
+.page-blog-single__title {
+  font-size: 22px;
+  margin-bottom: 40px;
+}
+@media screen and (min-width: 768px) {
+  .page-blog-single__title {
+    font-size: 26px;
+    margin-bottom: 48px;
+  }
+}
+.page-blog-single__content {
+  line-height: 2;
+}
+.page-blog-single__content p:not(:last-child) {
+  margin-bottom: 32px;
+}
+@media screen and (min-width: 768px) {
+  .page-blog-single__content p:not(:last-child) {
+    margin-bottom: 40px;
+  }
+}
+
 /*!
 page > error
 ------------------------------

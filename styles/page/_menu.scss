@@ -49,7 +49,12 @@ menu
   }
 
   &__img {
-    margin: 0;
+    flex-shrink: 0;
+    width: 100%;
+
+    @include mq(md){
+      width: 30%;
+    }
   }
 
   &__name {

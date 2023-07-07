@@ -14,6 +14,9 @@ shoplist
     grid-template-columns: repeat(1, 1fr);
     gap: 40px;
 
+    @include mq(md) {
+      gap: 20px;
+    }
     @include mq(lg) {
       grid-template-columns: repeat(2, 1fr);
       row-gap: 48px;
@@ -30,10 +33,8 @@ shoplist
     }
   }
   &__img {
-    margin: 0;
-
     @include mq(md) {
-      width: 53%;
+      width: 50%;
     }
   }
   &__name {

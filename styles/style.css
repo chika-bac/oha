@@ -183,24 +183,6 @@ body {
 }
 
 /*!
-utility
-------------------------------
-*/
-.u-visually-hidden {
-  position: absolute !important;
-  white-space: nowrap !important;
-  width: 1px !important;
-  height: 1px !important;
-  overflow: hidden !important;
-  border: 0 !important;
-  padding: 0 !important;
-  clip: rect(0 0 0 0) !important;
-  -webkit-clip-path: inset(50%) !important;
-          clip-path: inset(50%) !important;
-  margin: -1px !important;
-}
-
-/*!
 component > page-kv
 ------------------------------
 */
@@ -491,7 +473,7 @@ layout > header > sp-nav
   text-align: center;
 }
 .sp-nav__item + li {
-  border-left: 1px solid white;
+  border-left: 1px solid #ffffff;
 }
 
 /*!
@@ -586,7 +568,7 @@ menu
 ------------------------------
 */
 .top-menu {
-  background-image: url(../../images/menu/pic-menu-coffee03.jpg);
+  background-image: url(../images/menu/pic-menu-coffee03.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -737,7 +719,7 @@ blog
 }
 
 /*!
-page-kv
+concept
 ------------------------------
 */
 .page-kv-concept {
@@ -914,11 +896,11 @@ shoplist
 }
 
 /*!
-page > blog_archive
+blog_archive
 ------------------------------
 */
 .page-kv-blog-archive {
-  background-image: url(../../images/blog-archive-page-kv.jpg);
+  background-image: url(../images/blog-archive-page-kv.jpg);
 }
 
 .page-blog-archive__inner {
@@ -1055,7 +1037,7 @@ blog_single
 }
 
 /*!
-page > error
+error
 ------------------------------
 */
 .page-kv-error {

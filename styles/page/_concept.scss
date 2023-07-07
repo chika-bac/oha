@@ -1,16 +1,15 @@
 @use "../global" as *;
 
 /*!
-page-kv
+concept
 ------------------------------
 */
 .page-kv-concept {
   background-image: url(../images/pic-top-concept.jpg);
-
 }
 
 .page-concept {
-  &__img{
+  &__img {
     width: 100%;
   }
   &__text {

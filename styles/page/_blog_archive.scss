@@ -1,11 +1,11 @@
 @use "../global" as *;
 
 /*!
-page > blog_archive
+blog_archive
 ------------------------------
 */
 .page-kv-blog-archive {
-  background-image: url(../../images/blog-archive-page-kv.jpg);
+  background-image: url(../images/blog-archive-page-kv.jpg);
 }
 .page-blog-archive {
   &__inner {

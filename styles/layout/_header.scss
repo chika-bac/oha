@@ -108,7 +108,7 @@ layout > header > sp-nav
     text-align: center;
 
     & + li {
-      border-left: 1px solid white;
+      border-left: 1px solid $border-white;
     }
   }
 }

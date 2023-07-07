@@ -1,6 +1,0 @@
-@mixin rem($size){
-  font-size: ($size / 16) + rem;
-}
-
-// 呼び出し
-// @include rem(12);

@@ -1,14 +1,14 @@
 @use "../global" as *;
 
 /*!
-shop-list
+shoplist
 ------------------------------
 */
-.page-kv-shop-list {
+.page-kv-shoplist {
   background-image: url(../images/shoplist-page-kv.jpg);
 }
 
-.page-shop-list {
+.page-shoplist {
   &__inner {
     display: grid;
     grid-template-columns: repeat(1, 1fr);

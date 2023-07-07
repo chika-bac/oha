@@ -532,19 +532,19 @@ layout > footer
   display: block;
 }
 
-.shop-list {
+.shoplist {
   display: flex;
   gap: 0 0.8rem;
   flex-wrap: wrap;
   margin-top: 24px;
   justify-content: center;
 }
-.shop-list__item:not(:first-child):before {
+.shoplist__item:not(:first-child):before {
   content: "/";
   padding-right: 0.8rem;
 }
 @media screen and (min-width: 768px) {
-  .shop-list {
+  .shoplist {
     margin-top: 40px;
   }
 }
@@ -643,34 +643,34 @@ menu
 }
 
 /*!
-shop-list
+shoplist
 ------------------------------
 */
-.top-shop-list__text {
+.top-shoplist__text {
   text-align: center;
   line-height: 2;
   margin-bottom: 40px;
 }
 @media screen and (min-width: 768px) {
-  .top-shop-list__text {
+  .top-shoplist__text {
     margin-bottom: 48px;
   }
 }
-.top-shop-list__text span {
+.top-shoplist__text span {
   display: block;
 }
-.top-shop-list__list {
+.top-shoplist__list {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   place-items: center;
   row-gap: 16px;
 }
 @media screen and (min-width: 768px) {
-  .top-shop-list__list {
+  .top-shoplist__list {
     grid-template-columns: repeat(3, 1fr);
   }
 }
-.top-shop-list__item {
+.top-shoplist__item {
   line-height: 1;
   width: 155px;
   padding: 16px 10px;
@@ -679,12 +679,12 @@ shop-list
   border-radius: 100px;
 }
 @media screen and (min-width: 500px) {
-  .top-shop-list__item {
+  .top-shoplist__item {
     width: 200px;
   }
 }
 @media screen and (min-width: 768px) {
-  .top-shop-list__item {
+  .top-shoplist__item {
     width: 230px;
   }
 }
@@ -833,68 +833,68 @@ menu
 }
 
 /*!
-shop-list
+shoplist
 ------------------------------
 */
-.page-kv-shop-list {
+.page-kv-shoplist {
   background-image: url(../images/shoplist-page-kv.jpg);
 }
 
-.page-shop-list__inner {
+.page-shoplist__inner {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   gap: 40px;
 }
 @media screen and (min-width: 992px) {
-  .page-shop-list__inner {
+  .page-shoplist__inner {
     grid-template-columns: repeat(2, 1fr);
     row-gap: 48px;
   }
 }
-.page-shop-list__card {
+.page-shoplist__card {
   display: flex;
   flex-direction: column;
   gap: 16px;
 }
 @media screen and (min-width: 768px) {
-  .page-shop-list__card {
+  .page-shoplist__card {
     flex-direction: row;
     gap: 24px;
   }
 }
-.page-shop-list__img {
+.page-shoplist__img {
   margin: 0;
 }
 @media screen and (min-width: 768px) {
-  .page-shop-list__img {
+  .page-shoplist__img {
     width: 53%;
   }
 }
-.page-shop-list__name {
+.page-shoplist__name {
   font-size: 16px;
 }
 @media screen and (min-width: 768px) {
-  .page-shop-list__name {
+  .page-shoplist__name {
     font-size: 20px;
   }
 }
-.page-shop-list__detail {
+.page-shoplist__detail {
   font-size: 12px;
 }
 @media screen and (min-width: 768px) {
-  .page-shop-list__detail {
+  .page-shoplist__detail {
     font-size: 14px;
   }
 }
-.page-shop-list__detail span {
+.page-shoplist__detail span {
   display: block;
 }
-.page-shop-list__tel {
+.page-shoplist__tel {
   font-family: "Montserrat", sans-serif;
   font-size: 18px;
 }
 @media screen and (min-width: 768px) {
-  .page-shop-list__tel {
+  .page-shoplist__tel {
     font-size: 22px;
   }
 }
@@ -1046,4 +1046,15 @@ page > error
 */
 .page-kv-error {
   background-image: url(../images/menu-page-kv.jpg);
+}
+
+.page-error__msg {
+  text-align: center;
+  line-height: 2;
+  margin-bottom: 48px;
+}
+@media screen and (min-width: 768px) {
+  .page-error__msg > span {
+    display: block;
+  }
 }/*# sourceMappingURL=style.css.map */

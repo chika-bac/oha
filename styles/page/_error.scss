@@ -7,3 +7,17 @@ page > error
 .page-kv-error {
   background-image: url(../images/menu-page-kv.jpg);
 }
+
+.page-error {
+  &__msg {
+    text-align: center;
+    line-height: 2;
+    margin-bottom: 48px;
+
+    & > span {
+      @include mq(md) {
+        display: block;
+      }
+    }
+  }
+}

@@ -473,7 +473,7 @@ layout > header > sp-nav
   text-align: center;
 }
 .sp-nav__item + li {
-  border-left: 1px solid #ffffff;
+  border-left: 0.8px solid #ffffff;
 }
 
 /*!

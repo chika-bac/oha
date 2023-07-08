@@ -5,7 +5,8 @@ blog_single
 ------------------------------
 */
 .page-kv-blog-single {
-  background-image: url(../images/menu-page-kv.jpg);
+  background-image: url(../images/blog-single-page-kv.jpg);
+  background-image: image-set(url(../images/blog-single-page-kv.jpg) 1x, url(../images/blog-single-page-kv@2x.jpg) 2x);
 }
 
 .page-blog-single {

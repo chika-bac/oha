@@ -6,6 +6,7 @@ menu
 */
 .page-kv-menu {
   background-image: url(../images/menu-page-kv.jpg);
+  background-image: image-set(url(../images/menu-page-kv.jpg) 1x, url(../images/menu-page-kv@2x.jpg) 2x);
 }
 
 .page-menu {

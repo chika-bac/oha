@@ -6,6 +6,7 @@ error
 */
 .page-kv-error {
   background-image: url(../images/error-page-kv.jpg);
+  background-image: image-set(url(../images/error-page-kv.jpg) 1x, url(../images/error-page-kv@2x.jpg) 2x);
 }
 
 .page-error {

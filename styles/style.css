@@ -247,7 +247,7 @@ component > button
   transform: translateY(-50%);
   content: "";
   width: 24px;
-  height: 1px;
+  height: 0.8px;
   background-color: #ffffff;
 }
 @media screen and (min-width: 768px) {

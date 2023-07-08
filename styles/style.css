@@ -724,6 +724,8 @@ concept
 */
 .page-kv-concept {
   background-image: url(../images/concept-page-kv.jpg);
+  background-image: -webkit-image-set(url(../images/concept-page-kv.jpg) 1x, url(../images/concept-page-kv@2x.jpg) 2x);
+  background-image: image-set(url(../images/concept-page-kv.jpg) 1x, url(../images/concept-page-kv@2x.jpg) 2x);
 }
 
 .page-concept__img {
@@ -755,6 +757,8 @@ menu
 */
 .page-kv-menu {
   background-image: url(../images/menu-page-kv.jpg);
+  background-image: -webkit-image-set(url(../images/menu-page-kv.jpg) 1x, url(../images/menu-page-kv@2x.jpg) 2x);
+  background-image: image-set(url(../images/menu-page-kv.jpg) 1x, url(../images/menu-page-kv@2x.jpg) 2x);
 }
 
 .page-menu__title {
@@ -832,6 +836,8 @@ shoplist
 */
 .page-kv-shoplist {
   background-image: url(../images/shoplist-page-kv.jpg);
+  background-image: -webkit-image-set(url(../images/shoplist-page-kv.jpg) 1x, url(../images/shoplist-page-kv@2x.jpg) 2x);
+  background-image: image-set(url(../images/shoplist-page-kv.jpg) 1x, url(../images/shoplist-page-kv@2x.jpg) 2x);
 }
 
 .page-shoplist__inner {
@@ -901,6 +907,8 @@ blog_archive
 */
 .page-kv-blog-archive {
   background-image: url(../images/blog-archive-page-kv.jpg);
+  background-image: -webkit-image-set(url(../images/blog-archive-page-kv.jpg) 1x, url(../images/blog-archive-page-kv@2x.jpg) 2x);
+  background-image: image-set(url(../images/blog-archive-page-kv.jpg) 1x, url(../images/blog-archive-page-kv@2x.jpg) 2x);
 }
 
 .page-blog-archive__inner {
@@ -990,7 +998,9 @@ blog_single
 ------------------------------
 */
 .page-kv-blog-single {
-  background-image: url(../images/menu-page-kv.jpg);
+  background-image: url(../images/blog-single-page-kv.jpg);
+  background-image: -webkit-image-set(url(../images/blog-single-page-kv.jpg) 1x, url(../images/blog-single-page-kv@2x.jpg) 2x);
+  background-image: image-set(url(../images/blog-single-page-kv.jpg) 1x, url(../images/blog-single-page-kv@2x.jpg) 2x);
 }
 
 .page-blog-single__thumb {
@@ -1042,6 +1052,8 @@ error
 */
 .page-kv-error {
   background-image: url(../images/error-page-kv.jpg);
+  background-image: -webkit-image-set(url(../images/error-page-kv.jpg) 1x, url(../images/error-page-kv@2x.jpg) 2x);
+  background-image: image-set(url(../images/error-page-kv.jpg) 1x, url(../images/error-page-kv@2x.jpg) 2x);
 }
 
 .page-error__msg {

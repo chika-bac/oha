@@ -5,7 +5,8 @@ blog_archive
 ------------------------------
 */
 .page-kv-blog-archive {
-  background-image: url(../images/blog-archive-page-kv.jpg);
+  background-image: url(../images/blog-archive-page-kv.jpg); // image-set非対応ブラウザ用
+  background-image: image-set(url(../images/blog-archive-page-kv.jpg) 1x, url(../images/blog-archive-page-kv@2x.jpg) 2x);
 }
 .page-blog-archive {
   &__inner {

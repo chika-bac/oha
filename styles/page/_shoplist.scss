@@ -6,6 +6,7 @@ shoplist
 */
 .page-kv-shoplist {
   background-image: url(../images/shoplist-page-kv.jpg);
+  background-image: image-set(url(../images/shoplist-page-kv.jpg) 1x, url(../images/shoplist-page-kv@2x.jpg) 2x);
 }
 
 .page-shoplist {

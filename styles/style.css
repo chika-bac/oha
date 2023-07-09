@@ -847,11 +847,6 @@ shoplist
   grid-template-columns: repeat(1, 1fr);
   gap: 40px;
 }
-@media screen and (min-width: 768px) {
-  .page-shoplist__inner {
-    gap: 20px;
-  }
-}
 @media screen and (min-width: 992px) {
   .page-shoplist__inner {
     grid-template-columns: repeat(2, 1fr);

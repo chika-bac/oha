@@ -89,6 +89,8 @@ layout > header > sp-nav
 .sp-nav {
   background-color: $bg-primary;
   color: $font-white;
+  // 幅360px以下はスクロール
+  overflow-x: scroll;
 
   @include mq(md) {
     display: none;
@@ -98,6 +100,7 @@ layout > header > sp-nav
     width: 90%;
     display: flex;
     margin: 0 auto;
+    min-width: 360px;
   }
 
   &__item {

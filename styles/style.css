@@ -454,6 +454,7 @@ layout > header > sp-nav
 .sp-nav {
   background-color: #524433;
   color: #ffffff;
+  overflow-x: scroll;
 }
 @media screen and (min-width: 768px) {
   .sp-nav {
@@ -464,6 +465,7 @@ layout > header > sp-nav
   width: 90%;
   display: flex;
   margin: 0 auto;
+  min-width: 360px;
 }
 .sp-nav__item {
   text-transform: uppercase;

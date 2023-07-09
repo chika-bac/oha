@@ -126,10 +126,10 @@
           />
         </div>
         <div class="top-concept__text">
-          <h3 class="top-concept__copy">
+          <p class="top-concept__copy">
             一杯一杯まごころをこめて調製し、新鮮な香りと豊かな
             風味のコーヒーを提供します。
-          </h3>
+          </p>
           <p class="top-concept__content">
             <span>親譲りの無鉄砲で小供の時から損ばかりしている。</span>
             <span
@@ -147,7 +147,8 @@
     <section class="top-menu section">
       <h2 class="heading2-en">menu</h2>
       <div class="section-body container-m top-menu__inner">
-        <div class="top-menu__list">
+        <!-- headingがある要素はsection or articleで囲む（ないものはdiv） -->
+        <section class="top-menu__list">
           <h3 class="top-menu__title">drip</h3>
           <ul>
             <li class="top-menu__item">
@@ -172,9 +173,9 @@
               <span>フスクブレンド</span><span>¥800</span>
             </li>
           </ul>
-        </div>
+        </section>
 
-        <div class="top-menu__list">
+        <section class="top-menu__list">
           <h3 class="top-menu__title">espresso</h3>
           <ul>
             <li class="top-menu__item">
@@ -199,7 +200,7 @@
               <span>フスクブレンド</span><span>¥800</span>
             </li>
           </ul>
-        </div>
+        </section>
       </div>
       <a href="menu.html" class="btn btn--white btn--centered">more</a>
     </section>
@@ -267,9 +268,12 @@
                 loading="lazy"
               />
             </div>
-            <time class="top-blog__date">2021/01/01</time>
-            <h3 class="top-blog__title">講習会を開催しました。</h3>
           </a>
+          <time class="top-blog__date">2021/01/01</time>
+
+          <h3 class="top-blog__title">
+            <a href="blog_single.html">講習会を開催しました。</a>
+          </h3>
         </article>
         <article>
           <a href="blog_single.html">
@@ -287,9 +291,12 @@
                 loading="lazy"
               />
             </div>
-            <time class="top-blog__date">2021/01/01</time>
-            <h3 class="top-blog__title">講習会を開催しました。</h3>
           </a>
+          <time class="top-blog__date">2021/01/01</time>
+
+          <h3 class="top-blog__title">
+            <a href="blog_single.html">講習会を開催しました。</a>
+          </h3>
         </article>
         <article>
           <a href="blog_single.html">
@@ -307,9 +314,12 @@
                 loading="lazy"
               />
             </div>
-            <time class="top-blog__date">2021/01/01</time>
-            <h3 class="top-blog__title">講習会を開催しました。</h3>
           </a>
+          <time class="top-blog__date">2021/01/01</time>
+
+          <h3 class="top-blog__title">
+            <a href="blog_single.html">講習会を開催しました。</a>
+          </h3>
         </article>
       </div>
       <a href="blog_archive.html" class="btn btn--centered">more</a>
@@ -411,7 +421,7 @@
     <!-- footer -->
     <footer class="footer">
       <div class="container-s footer__inner">
-        <h1 class="footer__logo">
+        <p class="footer__logo">
           <a href="index.html">
             <img
               width="200"
@@ -422,15 +432,17 @@
               loading="lazy"
             />
           </a>
-        </h1>
-        <ul class="shoplist">
-          <li class="shoplist__item">北千住店</li>
-          <li class="shoplist__item">代官山店</li>
-          <li class="shoplist__item">新宿店</li>
-          <li class="shoplist__item">八王子店</li>
-          <li class="shoplist__item">銀座店</li>
-          <li class="shoplist__item">渋谷店</li>
-        </ul>
+        </p>
+        <nav>
+          <ul class="shoplist">
+            <li class="shoplist__item">北千住店</li>
+            <li class="shoplist__item">代官山店</li>
+            <li class="shoplist__item">新宿店</li>
+            <li class="shoplist__item">八王子店</li>
+            <li class="shoplist__item">銀座店</li>
+            <li class="shoplist__item">渋谷店</li>
+          </ul>
+        </nav>
         <div class="footer__address">
           <p>株式会社 SUPPLE</p>
           <p>〒123-4567 東京都渋谷区ABC</p>

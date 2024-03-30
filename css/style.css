@@ -204,9 +204,15 @@ component > button
 .button {
   min-width: 150px;
   padding: 10px 30px;
+  border-radius: 60px;
 }
 .button:hover {
   cursor: pointer;
+}
+
+.button-white {
+  border: 2px solid var(--color-black);
+  background: var(--color-white);
 }
 
 /*!
@@ -283,6 +289,10 @@ layout > header
 */
 .header {
   background-color: var(--color-white);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
 }
 
 .header__inner {
@@ -302,20 +312,37 @@ layout > header
 .header__nav-open {
   width: 36px;
   height: 21px;
-  display: none;
 }
 
 .header__nav {
-  background-color: var(--color-orange);
+  background-color: var(--color-yellow);
   height: 100vh;
-  width: 80vw;
-  z-index: 99;
-  position: relative;
-  left: 10%;
+  width: max(32vw, 18rem);
+  z-index: 4;
+  position: fixed;
+  top: 0;
+  right: 0;
+  padding: 100px 40px;
 }
 
 .header__nav-close {
   width: 36px;
+  position: absolute;
+  top: 25px;
+  right: 15px;
+}
+
+.header__list {
+  text-align: right;
+}
+
+.header__nav-item {
+  padding: 14px 0;
+  font-weight: 700;
+  letter-spacing: 0.48px;
+}
+.header__nav-item:last-child {
+  margin-top: 14px;
 }
 
 /*!

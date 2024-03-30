@@ -1,0 +1,30 @@
+@use "../global" as *;
+
+/*!
+component > heading
+------------------------------
+*/
+.heading-en {
+  font-size: 38px;
+  font-family: var(font-family-en);
+  letter-spacing: 0.1em;
+  padding-bottom: 14px;
+  // text-align: center;
+  text-transform: uppercase;
+
+  @include mq(md) {
+    font-size: 50px;
+  }
+}
+
+.heading-ja {
+  font-size: 14px;
+  letter-spacing: 0.08em;
+  padding-left: 0.08em;
+
+  @include mq(md) {
+    font-size: 16px;
+    // letter-spacing: 0.16rem;
+    // padding-left: 0.16rem;
+  }
+}

@@ -5,113 +5,55 @@ layout > header
 ------------------------------
 */
 .header {
-  background-color: $bg-white;
-  font-size: 12px;
-  letter-spacing: 0.06rem;
-  font-family: $font-family-en;
+  background-color: var(--color-white);
+}
 
-  &__inner {
-    padding: 16px 0;
-    display: flex;
-    justify-content: space-between;
-    width: 95%;
-    margin-left: auto;
-    margin-right: 0;
-    align-items: center;
-  }
+.header__inner {
+  padding: 22px 15px;
+  display: flex;
+  justify-content: space-between;
+}
 
-  &__logo {
-    width: 120px;
-    margin-right: auto;
+.header__logo {
+  width: 100px;
+}
 
-    @include mq(md) {
-      width: 200px;
-    }
-  }
+.header__nav-open {
+  width: 36px;
+  height: 21px;
+  display: none;
+}
 
-  &__btn {
-    width: 140px;
-    padding: 14px 10px 14px calc(10px + 0.06rem);
-    background-color: $bg-primary;
-    color: $font-white;
-    text-transform: uppercase;
-    line-height: 1;
-    text-align: center;
+.header__nav {
+  // display: none;
+  background-color: var(--color-orange);
+  height: 100vh;
+  width: 80vw;
+  z-index: 99;
+  position: relative;
+  left: 10%;
+  // transform: translateX(-10%);
+}
 
-    @include mq(md) {
-      width: 160px;
-      font-size: 16px;
-      letter-spacing: 0.08rem;
-      padding: 14.5px 10px 14.5px calc(10px + 0.08rem);
-    }
+.header__nav-close {
+  width: 36px;
+}
 
-    @include mq(lg) {
-      width: 170px;
-    }
-  }
+.header__list {
+}
+
+.header__nav-item {
+}
+
+.header__nav-link {
 }
 
 /*!
 layout > header > pc-nav
 ------------------------------
 */
-.pc-nav {
-  display: none;
-
-  font-size: 14px;
-  letter-spacing: 0.07rem;
-  text-transform: uppercase;
-  color: $font-primary;
-
-  @include mq(md) {
-    display: block;
-  }
-
-  &__inner {
-    display: flex;
-
-    @include mq(md) {
-      gap: 1.1rem;
-      margin-right: 1.1rem;
-    }
-
-    @include mq(lg) {
-      gap: 2rem;
-      margin-right: 2rem;
-    }
-  }
-}
 
 /*!
 layout > header > sp-nav
 ------------------------------
 */
-.sp-nav {
-  background-color: $bg-primary;
-  color: $font-white;
-  // 幅360px以下はスクロール
-  overflow-x: scroll;
-
-  @include mq(md) {
-    display: none;
-  }
-
-  &__inner {
-    width: 90%;
-    display: flex;
-    margin: 0 auto;
-    min-width: 360px;
-  }
-
-  &__item {
-    text-transform: uppercase;
-    margin: 14px 0;
-    position: relative;
-    flex-grow: 1;
-    text-align: center;
-
-    & + li {
-      border-left: 0.8px solid $border-white;
-    }
-  }
-}

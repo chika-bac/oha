@@ -1,39 +1,13 @@
-// background
-$bg-primary: #524433;
-$bg-secondary: #efede9;
-$bg-black: #000000;
-$bg-white: #ffffff;
+:root {
+  --font-family-base: "Noto Sans JP", sans-serif;
+  --font-family-en: "Montserrat", sans-serif;
 
-// border
-$border-black: #000000;
-$border-white: #ffffff;
-
-// font
-$font-primary: #524433;
-$font-white: #ffffff;
-$font-base: #000000;
-
-$content-width-s: 960px;
-$content-width-m: 1080px;
-$content-width-l: 1200px;
-
-$font-family-base: "Noto Sans JP", sans-serif;
-$font-family-en: "Montserrat", sans-serif;
-
-// :root {
-//   --color-bg-primary: #524433;
-//   --color-bg-secondary: #efede9;
-//   --color-bg-black: #000000;
-//   --color-bg-white: #ffffff;
-//   --color-border-black: #000000;
-//   --color-border-white: #ffffff;
-//   --color-font-primary: #524433;
-//   --color-font-white: #ffffff;
-//   --color-font-base: #000000;
-// }
-
-// 使う時
-// .shoplist-item-tel {
-//   font-size: 18px;
-//   font-family: var(--font-family-english);
-// }
+  --color-black: #111;
+  --color-white: #fff;
+  --color-base: #fafafa;
+  --color-orange: #f5810e;
+  --color-yellow: #fabe00;
+  // グラデーションカラー
+  --color-g-orange: #f8b819;
+  --color-g-yellow: #f0d320;
+}

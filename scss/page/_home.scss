@@ -5,20 +5,47 @@ fv
 ------------------------------
 */
 .fv {
-  margin-top: 72px;
+  margin: 72px auto 0;
+  padding: 0 15px;
+
+  @include mq(md) {
+    margin-top: 90px;
+  }
 }
 
 .fv__inner {
-  border-radius: 20px;
-  background: linear-gradient(180deg, var(--color-g-orange) 0%, var(--color-g-yellow) 100%);
+  position: relative;
+
+  @include mq(md) {
+    display: flex;
+    border-radius: 20px;
+    background: linear-gradient(180deg, var(--color-g-orange) 0%, var(--color-g-yellow) 100%);
+    padding: 110px 170px;
+  }
 }
 
 .fv__text {
+  padding: 50px 56px 255px;
   text-align: center;
-  padding: 50px 56px;
+  border-radius: 20px;
+  background: linear-gradient(180deg, var(--color-g-orange) 0%, var(--color-g-yellow) 100%);
+  white-space: nowrap;
+
+  @include mq(md) {
+    background: transparent;
+    text-align: start;
+    padding: 0;
+    margin-top: 20px;
+  }
 
   & span {
-    display: inline-block;
+    display: block;
+    width: fit-content;
+    margin: 0 auto;
+
+    @include mq(md) {
+      margin: 0;
+    }
   }
 }
 
@@ -31,12 +58,25 @@ fv
   // 「」の文字詰め用
   font-feature-settings: "palt";
 
+  @include mq(md) {
+    font-size: 38px;
+    letter-spacing: 3.8px;
+  }
+
   & span {
     background-color: var(--color-white);
     padding: 10px;
 
+    @include mq(md){
+      padding: 12px 16px;
+    }
+
     &:last-child {
       margin-top: 8px;
+
+      @include mq(md){
+        margin-top: 14px;
+      }
     }
   }
 }
@@ -46,6 +86,13 @@ fv
   letter-spacing: 0.48px;
   padding-left: 0.48px;
   font-weight: 700;
+
+  @include mq(md){
+    margin: 20px 0 30px;
+    letter-spacing: 0.54px;
+    padding-left: 0;
+    font-size: 18px;
+  }
 }
 
 .fv__button {
@@ -53,6 +100,18 @@ fv
 
 .fv__img {
   margin-top: 30px;
+  position: absolute;
+  top: 66%;
+  // left: 0;
+
+  @include mq(md) {
+    // position: static;
+    top: 0;
+    left: 45%;
+    top: 110px;
+    width: 600px;
+
+  }
 }
 
 /*!

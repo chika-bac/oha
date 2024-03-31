@@ -307,6 +307,7 @@ layout > header
   top: 0;
   left: 0;
   width: 100%;
+  z-index: 2;
 }
 
 .header__inner {
@@ -436,21 +437,57 @@ fv
 ------------------------------
 */
 .fv {
-  margin-top: 72px;
+  margin: 72px auto 0;
+  padding: 0 15px;
+}
+@media screen and (min-width: 768px) {
+  .fv {
+    margin-top: 90px;
+  }
 }
 
 .fv__inner {
-  border-radius: 20px;
-  background: -webkit-gradient(linear, left top, left bottom, from(var(--color-g-orange)), to(var(--color-g-yellow)));
-  background: linear-gradient(180deg, var(--color-g-orange) 0%, var(--color-g-yellow) 100%);
+  position: relative;
+}
+@media screen and (min-width: 768px) {
+  .fv__inner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    border-radius: 20px;
+    background: -webkit-gradient(linear, left top, left bottom, from(var(--color-g-orange)), to(var(--color-g-yellow)));
+    background: linear-gradient(180deg, var(--color-g-orange) 0%, var(--color-g-yellow) 100%);
+    padding: 110px 170px;
+  }
 }
 
 .fv__text {
+  padding: 50px 56px 255px;
   text-align: center;
-  padding: 50px 56px;
+  border-radius: 20px;
+  background: -webkit-gradient(linear, left top, left bottom, from(var(--color-g-orange)), to(var(--color-g-yellow)));
+  background: linear-gradient(180deg, var(--color-g-orange) 0%, var(--color-g-yellow) 100%);
+  white-space: nowrap;
+}
+@media screen and (min-width: 768px) {
+  .fv__text {
+    background: transparent;
+    text-align: start;
+    padding: 0;
+    margin-top: 20px;
+  }
 }
 .fv__text span {
-  display: inline-block;
+  display: block;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 auto;
+}
+@media screen and (min-width: 768px) {
+  .fv__text span {
+    margin: 0;
+  }
 }
 
 .fv__main-copy {
@@ -462,12 +499,28 @@ fv
   -webkit-font-feature-settings: "palt";
           font-feature-settings: "palt";
 }
+@media screen and (min-width: 768px) {
+  .fv__main-copy {
+    font-size: 38px;
+    letter-spacing: 3.8px;
+  }
+}
 .fv__main-copy span {
   background-color: var(--color-white);
   padding: 10px;
 }
+@media screen and (min-width: 768px) {
+  .fv__main-copy span {
+    padding: 12px 16px;
+  }
+}
 .fv__main-copy span:last-child {
   margin-top: 8px;
+}
+@media screen and (min-width: 768px) {
+  .fv__main-copy span:last-child {
+    margin-top: 14px;
+  }
 }
 
 .fv__sub-copy {
@@ -476,9 +529,27 @@ fv
   padding-left: 0.48px;
   font-weight: 700;
 }
+@media screen and (min-width: 768px) {
+  .fv__sub-copy {
+    margin: 20px 0 30px;
+    letter-spacing: 0.54px;
+    padding-left: 0;
+    font-size: 18px;
+  }
+}
 
 .fv__img {
   margin-top: 30px;
+  position: absolute;
+  top: 66%;
+}
+@media screen and (min-width: 768px) {
+  .fv__img {
+    top: 0;
+    left: 45%;
+    top: 110px;
+    width: 600px;
+  }
 }
 
 /*!

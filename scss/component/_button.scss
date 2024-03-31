@@ -8,6 +8,7 @@ component > button
   min-width: 150px;
   padding: 10px 30px;
   border-radius: 60px;
+  font-weight: 700;
 
   &:hover {
     cursor: pointer;
@@ -21,5 +22,17 @@ component > button
 
   &:hover {
     background-color: var(--color-yellow);
+  }
+}
+
+.button-black {
+  border: 2px solid var(--color-white);
+  background-color: var(--color-black);
+  transition: all 0.3s;
+  color: var(--color-white);
+
+  &:hover {
+    background-color: var(--color-white);
+    color: var(--color-black);
   }
 }

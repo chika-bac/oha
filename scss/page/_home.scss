@@ -1,41 +1,61 @@
 @use "../global" as *;
 
 /*!
-concept
+fv
 ------------------------------
 */
-.top-concept {
-  &__img {
-    width: 100%;
-  }
-  &__text {
-    text-align: center;
-    margin-top: 40px;
+.fv {
+  margin-top: 72px;
+}
 
-    @include mq(md) {
-      margin-top: 48px;
-    }
-  }
+.fv__inner {
+  border-radius: 20px;
+  background: linear-gradient(180deg, var(--color-g-orange) 0%, var(--color-g-yellow) 100%);
+}
 
-  &__copy {
-    font-size: 16px;
-    margin-bottom: 24px;
+.fv__text {
+  text-align: center;
+  padding: 50px 56px;
 
-    @include mq(md) {
-      font-size: 20px;
-      margin-bottom: 48px;
-    }
+  & span {
+    display: inline-block;
   }
-  &__content {
-    & span {
-      @include mq(md) {
-        display: block;
-      }
+}
+
+.fv__main-copy {
+  font-size: 22px;
+  letter-spacing: 2.2px;
+  text-indent: 2.2px;
+  line-height: 1;
+  font-weight: 700;
+  // 「」の文字詰め用
+  font-feature-settings: "palt";
+
+  & span {
+    background-color: var(--color-white);
+    padding: 10px;
+
+    &:last-child {
+      margin-top: 8px;
     }
   }
 }
 
+.fv__sub-copy {
+  margin: 26px 0 22px;
+  letter-spacing: 0.48px;
+  padding-left: 0.48px;
+  font-weight: 700;
+}
+
+.fv__button {
+}
+
+.fv__img {
+  margin-top: 30px;
+}
+
 /*!
-menu
+about
 ------------------------------
 */

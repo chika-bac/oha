@@ -205,6 +205,7 @@ component > button
   min-width: 150px;
   padding: 10px 30px;
   border-radius: 60px;
+  font-weight: 700;
 }
 .button:hover {
   cursor: pointer;
@@ -218,6 +219,18 @@ component > button
 }
 .button-white:hover {
   background-color: var(--color-yellow);
+}
+
+.button-black {
+  border: 2px solid var(--color-white);
+  background-color: var(--color-black);
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  color: var(--color-white);
+}
+.button-black:hover {
+  background-color: var(--color-white);
+  color: var(--color-black);
 }
 
 /*!
@@ -248,10 +261,6 @@ component > heading
   }
 }
 
-/*!
-component > instagram
-------------------------------
-*/
 /*!
 layout > section
 ------------------------------
@@ -423,38 +432,56 @@ layout > footer
 ------------------------------
 */
 /*!
-concept
+fv
 ------------------------------
 */
-.top-concept__img {
-  width: 100%;
+.fv {
+  margin-top: 72px;
 }
-.top-concept__text {
+
+.fv__inner {
+  border-radius: 20px;
+  background: -webkit-gradient(linear, left top, left bottom, from(var(--color-g-orange)), to(var(--color-g-yellow)));
+  background: linear-gradient(180deg, var(--color-g-orange) 0%, var(--color-g-yellow) 100%);
+}
+
+.fv__text {
   text-align: center;
-  margin-top: 40px;
+  padding: 50px 56px;
 }
-@media screen and (min-width: 768px) {
-  .top-concept__text {
-    margin-top: 48px;
-  }
+.fv__text span {
+  display: inline-block;
 }
-.top-concept__copy {
-  font-size: 16px;
-  margin-bottom: 24px;
+
+.fv__main-copy {
+  font-size: 22px;
+  letter-spacing: 2.2px;
+  text-indent: 2.2px;
+  line-height: 1;
+  font-weight: 700;
+  -webkit-font-feature-settings: "palt";
+          font-feature-settings: "palt";
 }
-@media screen and (min-width: 768px) {
-  .top-concept__copy {
-    font-size: 20px;
-    margin-bottom: 48px;
-  }
+.fv__main-copy span {
+  background-color: var(--color-white);
+  padding: 10px;
 }
-@media screen and (min-width: 768px) {
-  .top-concept__content span {
-    display: block;
-  }
+.fv__main-copy span:last-child {
+  margin-top: 8px;
+}
+
+.fv__sub-copy {
+  margin: 26px 0 22px;
+  letter-spacing: 0.48px;
+  padding-left: 0.48px;
+  font-weight: 700;
+}
+
+.fv__img {
+  margin-top: 30px;
 }
 
 /*!
-menu
+about
 ------------------------------
 *//*# sourceMappingURL=style.css.map */

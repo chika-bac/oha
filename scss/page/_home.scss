@@ -5,8 +5,10 @@ fv
 ------------------------------
 */
 .fv {
-  margin: 72px auto 0;
-  padding: 0 15px;
+  margin: 72px 30px 0;
+
+  border-radius: 20px;
+  background: linear-gradient(180deg, var(--color-g-orange) 0%, var(--color-g-yellow) 100%);
 
   @include mq(md) {
     margin-top: 90px;
@@ -18,9 +20,12 @@ fv
 
   @include mq(md) {
     display: flex;
-    border-radius: 20px;
-    background: linear-gradient(180deg, var(--color-g-orange) 0%, var(--color-g-yellow) 100%);
-    padding: 110px 170px;
+    flex-direction: row;
+    gap: 40px;
+    justify-content: space-between;
+    padding: 110px 15px;
+    width: 1040px;
+    margin: 0 auto;
   }
 }
 
@@ -28,11 +33,10 @@ fv
   padding: 50px 56px 255px;
   text-align: center;
   border-radius: 20px;
-  background: linear-gradient(180deg, var(--color-g-orange) 0%, var(--color-g-yellow) 100%);
   white-space: nowrap;
 
   @include mq(md) {
-    background: transparent;
+    // background: transparent;
     text-align: start;
     padding: 0;
     margin-top: 20px;
@@ -67,14 +71,14 @@ fv
     background-color: var(--color-white);
     padding: 10px;
 
-    @include mq(md){
+    @include mq(md) {
       padding: 12px 16px;
     }
 
     &:last-child {
       margin-top: 8px;
 
-      @include mq(md){
+      @include mq(md) {
         margin-top: 14px;
       }
     }
@@ -87,7 +91,7 @@ fv
   padding-left: 0.48px;
   font-weight: 700;
 
-  @include mq(md){
+  @include mq(md) {
     margin: 20px 0 30px;
     letter-spacing: 0.54px;
     padding-left: 0;
@@ -99,18 +103,16 @@ fv
 }
 
 .fv__img {
-  margin-top: 30px;
+  margin-top: 24px;
   position: absolute;
-  top: 66%;
-  // left: 0;
+  top: 60%;
 
   @include mq(md) {
     // position: static;
-    top: 0;
+    // top: 0;
     left: 45%;
     top: 110px;
     width: 600px;
-
   }
 }
 
@@ -118,3 +120,43 @@ fv
 about
 ------------------------------
 */
+.case {
+  padding: 240px 40px 60px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+
+  @include mq(md) {
+    padding: calc(70px + 110px) 260px 50px 260px;
+    gap: 54px;
+  }
+}
+
+.case__title {
+  text-align: center;
+  font-weight: 700;
+  letter-spacing: 1.8px;
+  padding-left: 1.8px;
+  line-height: 1;
+
+  @include mq(md) {
+    font-size: 20px;
+    letter-spacing: 2px;
+    padding-left: 2px;
+  }
+}
+
+.case__list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 22px 15px;
+
+  @include mq(md) {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 26px 40px;
+  }
+}
+
+.case__item {
+}

@@ -437,8 +437,10 @@ fv
 ------------------------------
 */
 .fv {
-  margin: 72px auto 0;
-  padding: 0 15px;
+  margin: 72px 30px 0;
+  border-radius: 20px;
+  background: -webkit-gradient(linear, left top, left bottom, from(var(--color-g-orange)), to(var(--color-g-yellow)));
+  background: linear-gradient(180deg, var(--color-g-orange) 0%, var(--color-g-yellow) 100%);
 }
 @media screen and (min-width: 768px) {
   .fv {
@@ -454,10 +456,17 @@ fv
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    border-radius: 20px;
-    background: -webkit-gradient(linear, left top, left bottom, from(var(--color-g-orange)), to(var(--color-g-yellow)));
-    background: linear-gradient(180deg, var(--color-g-orange) 0%, var(--color-g-yellow) 100%);
-    padding: 110px 170px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    gap: 40px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 110px 15px;
+    width: 1040px;
+    margin: 0 auto;
   }
 }
 
@@ -465,13 +474,10 @@ fv
   padding: 50px 56px 255px;
   text-align: center;
   border-radius: 20px;
-  background: -webkit-gradient(linear, left top, left bottom, from(var(--color-g-orange)), to(var(--color-g-yellow)));
-  background: linear-gradient(180deg, var(--color-g-orange) 0%, var(--color-g-yellow) 100%);
   white-space: nowrap;
 }
 @media screen and (min-width: 768px) {
   .fv__text {
-    background: transparent;
     text-align: start;
     padding: 0;
     margin-top: 20px;
@@ -539,13 +545,12 @@ fv
 }
 
 .fv__img {
-  margin-top: 30px;
+  margin-top: 24px;
   position: absolute;
-  top: 66%;
+  top: 60%;
 }
 @media screen and (min-width: 768px) {
   .fv__img {
-    top: 0;
     left: 45%;
     top: 110px;
     width: 600px;
@@ -555,4 +560,49 @@ fv
 /*!
 about
 ------------------------------
-*//*# sourceMappingURL=style.css.map */
+*/
+.case {
+  padding: 240px 40px 60px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 30px;
+}
+@media screen and (min-width: 768px) {
+  .case {
+    padding: 180px 260px 50px 260px;
+    gap: 54px;
+  }
+}
+
+.case__title {
+  text-align: center;
+  font-weight: 700;
+  letter-spacing: 1.8px;
+  padding-left: 1.8px;
+  line-height: 1;
+}
+@media screen and (min-width: 768px) {
+  .case__title {
+    font-size: 20px;
+    letter-spacing: 2px;
+    padding-left: 2px;
+  }
+}
+
+.case__list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 22px 15px;
+}
+@media screen and (min-width: 768px) {
+  .case__list {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 26px 40px;
+  }
+}/*# sourceMappingURL=style.css.map */

@@ -6,11 +6,17 @@ component > heading
 */
 .heading-en {
   font-size: 38px;
-  font-family: var(font-family-en);
+  font-family: var(--font-family-en);
   letter-spacing: 0.1em;
-  padding-bottom: 14px;
-  // text-align: center;
+  // padding-bottom: 14px;
+  text-align: center;
   text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 3.8px;
+  // padding-left: 3.8px;
+  // padding-top: 40px;
+
+  padding: 40px 0 14px 3.8px;
 
   @include mq(md) {
     font-size: 50px;

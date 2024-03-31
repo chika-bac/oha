@@ -212,7 +212,12 @@ component > button
 
 .button-white {
   border: 2px solid var(--color-black);
-  background: var(--color-white);
+  background-color: var(--color-white);
+  -webkit-transition: background-color 0.3s;
+  transition: background-color 0.3s;
+}
+.button-white:hover {
+  background-color: var(--color-yellow);
 }
 
 /*!
@@ -304,14 +309,42 @@ layout > header
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
+@media screen and (min-width: 768px) {
+  .header__inner {
+    padding: 30px 150px;
+  }
+}
 
 .header__logo {
   width: 100px;
 }
 
+/*!
+layout > header > nav
+------------------------------
+*/
 .header__nav-open {
   width: 36px;
   height: 21px;
+  cursor: pointer;
+}
+@media screen and (min-width: 768px) {
+  .header__nav-open {
+    display: none;
+  }
+}
+
+.header__nav-close {
+  width: 36px;
+  position: absolute;
+  top: 25px;
+  right: 15px;
+  cursor: pointer;
+}
+@media screen and (min-width: 768px) {
+  .header__nav-close {
+    display: none;
+  }
 }
 
 .header__nav {
@@ -322,18 +355,35 @@ layout > header
   position: fixed;
   top: 0;
   right: 0;
+  translate: 100vw;
   padding: 100px 40px;
 }
-
-.header__nav-close {
-  width: 36px;
-  position: absolute;
-  top: 25px;
-  right: 15px;
+@media screen and (min-width: 768px) {
+  .header__nav {
+    translate: 0;
+    background-color: transparent;
+    height: 100%;
+    position: static;
+    padding: 0;
+  }
 }
 
 .header__list {
   text-align: right;
+}
+@media screen and (min-width: 768px) {
+  .header__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 40px;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
 .header__nav-item {
@@ -341,18 +391,33 @@ layout > header
   font-weight: 700;
   letter-spacing: 0.48px;
 }
+@media screen and (min-width: 768px) {
+  .header__nav-item {
+    padding: 0;
+  }
+}
 .header__nav-item:last-child {
   margin-top: 14px;
 }
+@media screen and (min-width: 768px) {
+  .header__nav-item:last-child {
+    margin-top: 0;
+  }
+}
 
-/*!
-layout > header > pc-nav
-------------------------------
-*/
-/*!
-layout > header > sp-nav
-------------------------------
-*/
+.header__nav-link {
+  white-space: nowrap;
+  cursor: pointer;
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s;
+}
+.header__nav-link:hover {
+  color: var(--color-orange);
+}
+.header__nav-link:last-child:hover {
+  color: var(--color-black);
+}
+
 /*!
 layout > footer
 ------------------------------

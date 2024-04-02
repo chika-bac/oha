@@ -13,7 +13,9 @@ fv
   margin: 72px auto;
 
   @include mq(md) {
+    border-radius: 30px;
     margin-top: 90px;
+    max-width: calc(100% - 30px * 2);
   }
 }
 
@@ -23,12 +25,8 @@ fv
   padding: 50px 20px 255px;
 
   @include mq(md) {
-    display: flex;
-    flex-direction: row;
-    gap: 40px;
-    justify-content: space-between;
-    padding: 110px 15px;
-    width: 1040px;
+    padding: 110px 30px 109px;
+    max-width: calc(1040px + 30px * 2);
     margin: 0 auto;
   }
 }
@@ -37,10 +35,7 @@ fv
   text-align: center;
 
   @include mq(md) {
-    // background: transparent;
-    // text-align: start;
-    // padding: 0;
-    // margin-top: 20px;
+    text-align: start;
   }
 }
 
@@ -65,8 +60,11 @@ fv
   margin: 0 auto;
 
   @include mq(md) {
-    // font-size: 38px;
-    // letter-spacing: 3.8px;
+    margin-left: 0;
+    margin-right: 0;
+    font-size: 38px;
+    letter-spacing: 3.8px;
+    padding: 12px 16px;
   }
 }
 
@@ -75,6 +73,10 @@ fv
 
 .fv__lead2 {
   margin-top: 8px;
+
+  @include mq(md) {
+    margin-top: 12px;
+  }
 }
 
 .fv__description {
@@ -88,10 +90,10 @@ fv
   }
 
   @include mq(md) {
-    // margin: 20px 0 30px;
-    // letter-spacing: 0.54px;
+    margin: 20px 0 30px;
+    letter-spacing: 0.54px;
     // padding-left: 0;
-    // font-size: 18px;
+    font-size: 18px;
   }
 }
 
@@ -100,21 +102,26 @@ fv
 
 .fv__img {
   position: absolute;
-  left: 0;
+  right: 0;
   bottom: -108px;
   width: 100%;
   text-align: center;
 
   @include mq(md) {
-    // position: static;
-    // top: 0;
-    // left: 45%;
-    // top: 110px;
-    // width: 600px;
+    width: calc(600px / 1040px * 100%);
+    text-align: right;
+    bottom: -88px;
+    right: 30px;
   }
 
-  & img {
+  img {
     width: 345px;
+
+    @include mq(md) {
+      width: 100%;
+      // 画像の最大幅を600pxに制限
+      max-width: 600px;
+    }
   }
 }
 

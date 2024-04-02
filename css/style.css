@@ -244,12 +244,12 @@ component > heading
   text-align: center;
   text-transform: uppercase;
   font-weight: 700;
-  letter-spacing: 3.8px;
-  padding: 40px 0 14px 3.8px;
+  padding-left: 3.8px;
 }
 @media screen and (min-width: 768px) {
   .heading-en {
     font-size: 50px;
+    padding-left: 5px;
   }
 }
 
@@ -294,10 +294,6 @@ layout > container
   margin: 0 auto;
   max-width: 1170px;
 }
-.section {
-  padding: 60px 15px;
-}
-
 /*!
 layout > header
 ------------------------------
@@ -560,8 +556,8 @@ case
 ------------------------------
 */
 .case {
-  padding: 240px 40px 60px;
-  margin: 0 auto;
+  padding: 60px 40px;
+  margin: 108px auto 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -609,15 +605,41 @@ case
 news
 ------------------------------
 */
+.news {
+  margin: 60px 15px;
+}
+
 .news__inner {
   background-color: var(--color-white);
   border-radius: 20px;
   -webkit-box-shadow: 0px 9px 30px 0px #f4f4f4;
           box-shadow: 0px 9px 30px 0px #f4f4f4;
+  padding: 40px 12px;
+  max-width: 930px;
+  margin: 0 auto;
+}
+@media screen and (min-width: 768px) {
+  .news__inner {
+    padding: 40px 105px 80px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .news__heading {
+    text-align: left;
+    padding-left: 0;
+  }
 }
 
 .news__content {
-  padding: 0 12px 22px;
+  padding-top: 28px;
+  padding-bottom: 22px;
+}
+@media screen and (min-width: 768px) {
+  .news__content {
+    padding-top: 30px;
+    padding-bottom: 20px;
+  }
 }
 
 .news__item {

@@ -5,10 +5,12 @@ fv
 ------------------------------
 */
 .fv {
-  margin: 72px 30px 0;
-
   border-radius: 20px;
   background: linear-gradient(180deg, var(--color-g-orange) 0%, var(--color-g-yellow) 100%);
+  // 最大幅は左右の余白15pxを確保した幅にする
+  max-width: calc(100% - 15px * 2);
+  // header分の高さを考慮
+  margin: 72px auto;
 
   @include mq(md) {
     margin-top: 90px;
@@ -16,7 +18,9 @@ fv
 }
 
 .fv__inner {
+  // 画像の位置配置のため
   position: relative;
+  padding: 50px 20px 255px;
 
   @include mq(md) {
     display: flex;
@@ -29,31 +33,22 @@ fv
   }
 }
 
-.fv__text {
-  padding: 50px 56px 255px;
+.fv_content {
   text-align: center;
-  border-radius: 20px;
-  white-space: nowrap;
 
   @include mq(md) {
     // background: transparent;
-    text-align: start;
-    padding: 0;
-    margin-top: 20px;
-  }
-
-  & span {
-    display: block;
-    width: fit-content;
-    margin: 0 auto;
-
-    @include mq(md) {
-      margin: 0;
-    }
+    // text-align: start;
+    // padding: 0;
+    // margin-top: 20px;
   }
 }
 
-.fv__main-copy {
+.fv__lead {
+}
+
+.fv__lead1,
+.fv__lead2 {
   font-size: 22px;
   letter-spacing: 2.2px;
   text-indent: 2.2px;
@@ -61,41 +56,42 @@ fv
   font-weight: 700;
   // 「」の文字詰め用
   font-feature-settings: "palt";
+  background-color: var(--color-white);
+  border-radius: 5px;
+  padding: 10px;
+  display: block;
+  // 文字のサイズに応じて幅が可変
+  width: fit-content;
+  margin: 0 auto;
 
   @include mq(md) {
-    font-size: 38px;
-    letter-spacing: 3.8px;
-  }
-
-  & span {
-    background-color: var(--color-white);
-    padding: 10px;
-
-    @include mq(md) {
-      padding: 12px 16px;
-    }
-
-    &:last-child {
-      margin-top: 8px;
-
-      @include mq(md) {
-        margin-top: 14px;
-      }
-    }
+    // font-size: 38px;
+    // letter-spacing: 3.8px;
   }
 }
 
-.fv__sub-copy {
+.fv__lead1 {
+}
+
+.fv__lead2 {
+  margin-top: 8px;
+}
+
+.fv__description {
   margin: 26px 0 22px;
   letter-spacing: 0.48px;
   padding-left: 0.48px;
   font-weight: 700;
 
+  & span {
+    display: block;
+  }
+
   @include mq(md) {
-    margin: 20px 0 30px;
-    letter-spacing: 0.54px;
-    padding-left: 0;
-    font-size: 18px;
+    // margin: 20px 0 30px;
+    // letter-spacing: 0.54px;
+    // padding-left: 0;
+    // font-size: 18px;
   }
 }
 
@@ -103,16 +99,22 @@ fv
 }
 
 .fv__img {
-  margin-top: 24px;
   position: absolute;
-  top: 60%;
+  left: 0;
+  bottom: -108px;
+  width: 100%;
+  text-align: center;
 
   @include mq(md) {
     // position: static;
     // top: 0;
-    left: 45%;
-    top: 110px;
-    width: 600px;
+    // left: 45%;
+    // top: 110px;
+    // width: 600px;
+  }
+
+  & img {
+    width: 345px;
   }
 }
 

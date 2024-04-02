@@ -6,7 +6,8 @@ component > button
 */
 .button {
   min-width: 150px;
-  padding: 10px 30px;
+  // borderの分（2px）を引いて余白を作る
+  padding: calc(10px - 2px) calc(30px - 2px);
   border-radius: 60px;
   font-weight: 700;
 

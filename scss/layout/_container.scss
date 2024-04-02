@@ -8,10 +8,12 @@ layout > container
 .container {
   padding: 0 15px;
   margin: 0 auto;
+  // 左右のpadding（15px * 2）を考慮 -> 内側の要素だけを1140pxにできる
+  max-width: calc(1140px + 15px * 2);
 
   @include mq(md) {
-    max-width: 1140px;
-    padding: 0;
+    // max-width: 1140px;
+    // padding: 0;
   }
 }
 

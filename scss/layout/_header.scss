@@ -6,17 +6,18 @@ layout > header
 */
 .header {
   background-color: var(--color-white);
-  position: fixed;
-  top: 0;
-  left: 0;
+  // position: fixed;
+  // top: 0;
+  // left: 0;
   width: 100%;
   z-index: 2;
 }
 
 .header__inner {
-  padding: 22px 15px;
+  padding: 28px 15px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 
   @include mq(md) {
     // padding: 30px 150px;

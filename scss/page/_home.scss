@@ -10,11 +10,11 @@ fv
   // 最大幅は左右の余白15pxを確保した幅にする
   max-width: calc(100% - 15px * 2);
   // header分の高さを考慮
-  margin: 70px auto;
+  margin: 0 auto;
 
   @include mq(md) {
     border-radius: 30px;
-    margin-top: 90px;
+    // margin-top: 90px;
     max-width: calc(100% - 30px * 2);
   }
 }
@@ -25,7 +25,7 @@ fv
   padding: 50px 20px 255px;
 
   @include mq(md) {
-    padding: 110px 30px 109px;
+    padding: 110px 30px 118px;
     max-width: calc(1040px + 30px * 2);
     margin: 0 auto;
   }
@@ -79,7 +79,7 @@ fv
 }
 
 .fv__description {
-  margin: 26px 0 31px;
+  margin: 26px 0 30px;
   letter-spacing: 0.48px;
   padding-left: 0.48px;
   font-weight: 700;
@@ -89,7 +89,7 @@ fv
   }
 
   @include mq(md) {
-    margin: 20px 0 30px;
+    margin: 20px 0 42px;
     letter-spacing: 0.54px;
     // padding-left: 0;
     font-size: 18px;

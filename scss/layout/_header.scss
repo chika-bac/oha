@@ -35,15 +35,12 @@ layout > header
 layout > header > nav
 ------------------------------
 */
-// .header__nav-open {
-//   width: 36px;
-//   height: 21px;
-//   cursor: pointer;
+.header__nav-open {
+  margin-top: 3px;
 
-//   @include mq(md) {
-//     display: none;
-//   }
-// }
+  @include mq(md) {
+  }
+}
 
 .drawer-icon {
   width: 36px;

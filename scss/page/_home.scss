@@ -10,7 +10,7 @@ fv
   // 最大幅は左右の余白15pxを確保した幅にする
   max-width: calc(100% - 15px * 2);
   // header分の高さを考慮
-  margin: 72px auto;
+  margin: 70px auto;
 
   @include mq(md) {
     border-radius: 30px;
@@ -46,7 +46,6 @@ fv
 .fv__lead2 {
   font-size: 22px;
   letter-spacing: 2.2px;
-  text-indent: 2.2px;
   line-height: 1;
   font-weight: 700;
   // 「」の文字詰め用
@@ -80,7 +79,7 @@ fv
 }
 
 .fv__description {
-  margin: 26px 0 22px;
+  margin: 26px 0 31px;
   letter-spacing: 0.48px;
   padding-left: 0.48px;
   font-weight: 700;
@@ -103,7 +102,7 @@ fv
 .fv__img {
   position: absolute;
   right: 0;
-  bottom: -108px;
+  bottom: -118px;
   width: 100%;
   text-align: center;
 
@@ -132,7 +131,7 @@ case
 .case {
   padding-top: 60px;
   padding-bottom: 60px;
-  margin: 108px auto 0;
+  margin: 118px auto 0;
 
   @include mq(md) {
     margin-top: 88px;

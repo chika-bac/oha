@@ -329,6 +329,9 @@ layout > header
 layout > header > nav
 ------------------------------
 */
+.header__nav-open {
+  margin-top: 3px;
+}
 .drawer-icon {
   width: 36px;
   height: 21px;
@@ -440,7 +443,7 @@ fv
   background: -webkit-gradient(linear, left top, left bottom, from(var(--color-g-orange)), to(var(--color-g-yellow)));
   background: linear-gradient(180deg, var(--color-g-orange) 0%, var(--color-g-yellow) 100%);
   max-width: calc(100% - 30px);
-  margin: 72px auto;
+  margin: 70px auto;
 }
 @media screen and (min-width: 768px) {
   .fv {
@@ -475,7 +478,6 @@ fv
 .fv__lead2 {
   font-size: 22px;
   letter-spacing: 2.2px;
-  text-indent: 2.2px;
   line-height: 1;
   font-weight: 700;
   -webkit-font-feature-settings: "palt";
@@ -510,7 +512,7 @@ fv
 }
 
 .fv__description {
-  margin: 26px 0 22px;
+  margin: 26px 0 31px;
   letter-spacing: 0.48px;
   padding-left: 0.48px;
   font-weight: 700;
@@ -529,7 +531,7 @@ fv
 .fv__img {
   position: absolute;
   right: 0;
-  bottom: -108px;
+  bottom: -118px;
   width: 100%;
   text-align: center;
 }
@@ -558,7 +560,7 @@ case
 .case {
   padding-top: 60px;
   padding-bottom: 60px;
-  margin: 108px auto 0;
+  margin: 118px auto 0;
 }
 @media screen and (min-width: 768px) {
   .case {

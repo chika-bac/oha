@@ -1,155 +1,155 @@
-@use "../global" as *;
+// @use "../global" as *;
 
-/*!
-layout > header
-------------------------------
-*/
-.header {
-  background-color: var(--color-white);
-  // position: fixed;
-  // top: 0;
-  // left: 0;
-  width: 100%;
-  z-index: 2;
-}
+// /*!
+// layout > header
+// ------------------------------
+// */
+// .header {
+//   background-color: var(--color-white);
+//   // position: fixed;
+//   // top: 0;
+//   // left: 0;
+//   width: 100%;
+//   z-index: 2;
+// }
 
-.header__inner {
-  padding: 28px 15px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+// .header__inner {
+//   padding: 28px 15px;
+//   display: flex;
+//   justify-content: space-between;
+//   align-items: center;
 
-  @include mq(md) {
-    // padding: 30px 150px;
-  }
-}
+//   @include mq(md) {
+//     // padding: 30px 150px;
+//   }
+// }
 
-.header__logo {
-  width: 100px;
+// .header__logo {
+//   width: 100px;
 
-  @include mq(md) {
-    width: 135px;
-  }
-}
+//   @include mq(md) {
+//     width: 135px;
+//   }
+// }
 
-/*!
-layout > header > nav
-------------------------------
-*/
-.header__nav-open {
-  margin-top: 3px;
+// /*!
+// layout > header > nav
+// ------------------------------
+// */
+// .header__nav-open {
+//   margin-top: 3px;
 
-  @include mq(md) {
-  }
-}
+//   @include mq(md) {
+//   }
+// }
 
-.drawer-icon {
-  width: 36px;
-  height: 21px;
-  position: relative;
-
-  @include mq(md) {
-    display: none;
-  }
-}
-
-.header__icon-bar {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 36px;
-  height: 3px;
-  border-radius: 6px;
-  background: var(--color-black);
-
-  // nth-of-type: 同じ要素の中で何番目に現れるか
-  &:nth-of-type(2) {
-    top: 9px;
-  }
-
-  &:nth-of-type(3) {
-    top: 18px;
-  }
-}
-
-// .header__nav-close {
+// .drawer-icon {
 //   width: 36px;
-//   position: absolute;
-//   top: 25px;
-//   right: 15px;
-//   cursor: pointer;
+//   height: 21px;
+//   position: relative;
 
 //   @include mq(md) {
 //     display: none;
 //   }
 // }
 
-.header__nav {
-  background-color: var(--color-yellow);
-  height: 100vh;
-  width: max(32vw, 18rem);
-  z-index: 4;
-  position: fixed;
-  top: 0;
-  right: 0;
-  // 100％右側（画面外）に配置
-  translate: 100vw;
-  padding: 100px 40px;
+// .header__icon-bar {
+//   position: absolute;
+//   top: 0;
+//   left: 0;
+//   width: 36px;
+//   height: 3px;
+//   border-radius: 6px;
+//   background: var(--color-black);
 
-  @include mq(md) {
-    translate: 0;
-    background-color: transparent;
-    height: 100%;
-    position: static;
-    padding: 0;
-  }
-}
+//   // nth-of-type: 同じ要素の中で何番目に現れるか
+//   &:nth-of-type(2) {
+//     top: 9px;
+//   }
 
-.header__list {
-  text-align: right;
+//   &:nth-of-type(3) {
+//     top: 18px;
+//   }
+// }
 
-  @include mq(md) {
-    display: flex;
-    gap: 40px;
-    // gap: 2.5rem;
+// // .header__nav-close {
+// //   width: 36px;
+// //   position: absolute;
+// //   top: 25px;
+// //   right: 15px;
+// //   cursor: pointer;
 
-    // メニューを右寄せに配置
-    justify-content: flex-end;
-    align-items: center;
-  }
-}
+// //   @include mq(md) {
+// //     display: none;
+// //   }
+// // }
 
-.header__nav-item {
-  padding: 14px 0;
-  font-weight: 700;
-  letter-spacing: 0.48px;
+// .header__nav {
+//   background-color: var(--color-yellow);
+//   height: 100vh;
+//   width: max(32vw, 18rem);
+//   z-index: 4;
+//   position: fixed;
+//   top: 0;
+//   right: 0;
+//   // 100％右側（画面外）に配置
+//   translate: 100vw;
+//   padding: 100px 40px;
 
-  @include mq(md) {
-    padding: 0;
-  }
+//   @include mq(md) {
+//     translate: 0;
+//     background-color: transparent;
+//     height: 100%;
+//     position: static;
+//     padding: 0;
+//   }
+// }
 
-  &:last-child {
-    margin-top: 14px;
+// .header__list {
+//   text-align: right;
 
-    @include mq(md) {
-      margin-top: 0;
-    }
-  }
-}
+//   @include mq(md) {
+//     display: flex;
+//     gap: 40px;
+//     // gap: 2.5rem;
 
-.header__nav-link {
-  // テキストを折り返さずに1行に表示
-  white-space: nowrap;
-  cursor: pointer;
-  transition: color 0.3s;
+//     // メニューを右寄せに配置
+//     justify-content: flex-end;
+//     align-items: center;
+//   }
+// }
 
-  &:hover {
-    color: var(--color-orange);
-  }
+// .header__nav-item {
+//   padding: 14px 0;
+//   font-weight: 700;
+//   letter-spacing: 0.48px;
 
-  &:last-child {
-    &:hover {
-      color: var(--color-black);
-    }
-  }
-}
+//   @include mq(md) {
+//     padding: 0;
+//   }
+
+//   &:last-child {
+//     margin-top: 14px;
+
+//     @include mq(md) {
+//       margin-top: 0;
+//     }
+//   }
+// }
+
+// .header__nav-link {
+//   // テキストを折り返さずに1行に表示
+//   white-space: nowrap;
+//   cursor: pointer;
+//   transition: color 0.3s;
+
+//   &:hover {
+//     color: var(--color-orange);
+//   }
+
+//   &:last-child {
+//     &:hover {
+//       color: var(--color-black);
+//     }
+//   }
+// }

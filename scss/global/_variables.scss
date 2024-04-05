@@ -2,12 +2,18 @@
   --font-family-base: "Noto Sans JP", sans-serif;
   --font-family-en: "Montserrat", sans-serif;
 
+  // font
+  --font-size-base: 16px;
+  --line-height-base: 1.7;
+
   --color-black: #111;
   --color-white: #fff;
   --color-base: #fafafa;
   --color-orange: #f5810e;
   --color-yellow: #fabe00;
   // グラデーションカラー
-  --color-g-orange: #f8b819;
-  --color-g-yellow: #f0d320;
+  --color-gradation: linear-gradient(180deg, #f8b819 0%, #f0d320 100%);
+
+  // inner
+  --width-inner: 1140px;
 }

@@ -242,7 +242,7 @@ component > heading
 .heading-en {
   font-size: 38px;
   font-family: var(--font-family-en);
-  letter-spacing: 0.1em;
+  letter-spacing: 0.1px;
   text-align: center;
   text-transform: uppercase;
   font-weight: 700;
@@ -257,8 +257,8 @@ component > heading
 
 .heading-ja {
   font-size: 14px;
-  letter-spacing: 0.08em;
-  padding-left: 0.08em;
+  letter-spacing: 0.08px;
+  padding-left: 0.08px;
 }
 @media screen and (min-width: 768px) {
   .heading-ja {
@@ -300,6 +300,18 @@ layout > container
 layout > footer
 ------------------------------
 */
+@media screen and (min-width: 500px) {
+  .hidden-sp {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hidden-pc {
+    display: none;
+  }
+}
+
 /*!
 header
 ------------------------------
@@ -582,7 +594,9 @@ header
 }
 @media screen and (min-width: 768px) {
   .mv__image img {
-    width: 600px;
+    max-width: 600px;
+    width: 100%;
+    height: auto;
   }
 }
 
@@ -843,12 +857,23 @@ about
   padding-bottom: 60px;
   overflow: hidden;
 }
+@media screen and (min-width: 768px) {
+  .about {
+    padding-top: 50px;
+    padding-bottom: 100px;
+  }
+}
 
 .about__title {
   text-align: center;
 }
 .about__title img {
   width: 180px;
+}
+@media screen and (min-width: 768px) {
+  .about__title img {
+    width: 230px;
+  }
 }
 
 .about__content {
@@ -858,6 +883,13 @@ about
   text-align: center;
   position: relative;
   z-index: 0;
+}
+@media screen and (min-width: 768px) {
+  .about__content {
+    margin-top: 176px;
+    padding-top: 284px;
+    padding-bottom: 100px;
+  }
 }
 .about__content::before {
   content: "";
@@ -872,6 +904,12 @@ about
           transform: translateX(-50%);
   z-index: -1;
 }
+@media screen and (min-width: 768px) {
+  .about__content::before {
+    width: 800px;
+    height: 800px;
+  }
+}
 
 .about__img {
   position: absolute;
@@ -880,8 +918,18 @@ about
   left: 0;
   width: 100%;
 }
+@media screen and (min-width: 768px) {
+  .about__img {
+    top: -126px;
+  }
+}
 .about__img img {
   width: 320px;
+}
+@media screen and (min-width: 768px) {
+  .about__img img {
+    width: 330px;
+  }
 }
 
 .about__text {
@@ -895,9 +943,19 @@ about
   line-height: 1;
   letter-spacing: 1.28px;
 }
+@media screen and (min-width: 768px) {
+  .about__pop {
+    margin-top: 42px;
+  }
+}
 
 .about__button {
   margin-top: 12px;
+}
+@media screen and (min-width: 768px) {
+  .about__button {
+    margin-top: 15px;
+  }
 }
 .about__button button {
   font-weight: 700;

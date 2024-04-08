@@ -1,5 +1,17 @@
 @use "../global" as *;
 
+.hidden-sp {
+  @include mq(sm) {
+    display: none;
+  }
+}
+
+.hidden-pc {
+  @include mq(md) {
+    display: none;
+  }
+}
+
 /*!
 header
 ------------------------------
@@ -285,7 +297,12 @@ header
     width: 345px;
 
     @include mq(md) {
-      width: 600px;
+      // width: 600px;
+      // 画像の最大幅を600pxに制限
+      max-width: 600px;
+      width: 100%;
+      // アスペクト比を維持したまま幅に合わせて高さを自動調整
+      height: auto;
     }
   }
 }
@@ -542,6 +559,11 @@ about
   padding-top: 60px;
   padding-bottom: 60px;
   overflow: hidden;
+
+  @include mq(md) {
+    padding-top: 50px;
+    padding-bottom: 100px;
+  }
 }
 
 .about__inner {
@@ -551,6 +573,10 @@ about
   text-align: center;
   & img {
     width: 180px;
+
+    @include mq(md) {
+      width: 230px;
+    }
   }
 }
 
@@ -561,6 +587,12 @@ about
   text-align: center;
   position: relative;
   z-index: 0;
+
+  @include mq(md) {
+    margin-top: 176px;
+    padding-top: 284px;
+    padding-bottom: 100px;
+  }
 
   &::before {
     content: "";
@@ -573,6 +605,11 @@ about
     left: 50%;
     transform: translateX(-50%);
     z-index: -1;
+
+    @include mq(md) {
+      width: 800px;
+      height: 800px;
+    }
   }
 }
 
@@ -583,8 +620,16 @@ about
   left: 0;
   width: 100%;
 
+  @include mq(md) {
+    top: -126px;
+  }
+
   & img {
     width: 320px;
+
+    @include mq(md) {
+      width: 330px;
+    }
   }
 }
 
@@ -598,10 +643,18 @@ about
   font-weight: 700;
   line-height: 1;
   letter-spacing: 1.28px;
+
+  @include mq(md) {
+    margin-top: 42px;
+  }
 }
 
 .about__button {
   margin-top: 12px;
+
+  @include mq(md) {
+    margin-top: 15px;
+  }
 
   & button {
     font-weight: 700;

@@ -208,13 +208,16 @@ component > button
   padding: 8px 28px;
   border-radius: 60px;
   font-weight: 700;
+  letter-spacing: 0.48px;
+  display: inline-block;
+  text-align: center;
+  border: 2px solid currentColor;
 }
 .button:hover {
   cursor: pointer;
 }
 
 .button-white {
-  border: 2px solid var(--color-black);
   background-color: var(--color-white);
   -webkit-transition: background-color 0.3s;
   transition: background-color 0.3s;
@@ -224,11 +227,10 @@ component > button
 }
 
 .button-black {
-  border: 2px solid var(--color-white);
   background-color: var(--color-black);
+  color: var(--color-white);
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
-  color: var(--color-white);
 }
 .button-black:hover {
   background-color: var(--color-white);
@@ -239,30 +241,36 @@ component > button
 component > heading
 ------------------------------
 */
+.heading {
+  text-align: center;
+  font-family: var(--font-family-en);
+}
+
 .heading-en {
   font-size: 38px;
-  font-family: var(--font-family-en);
-  letter-spacing: 0.1px;
-  text-align: center;
-  text-transform: uppercase;
   font-weight: 700;
-  padding-left: 3.8px;
+  line-height: 1;
+  letter-spacing: 3.8px;
+  text-transform: uppercase;
 }
 @media screen and (min-width: 768px) {
   .heading-en {
     font-size: 50px;
-    padding-left: 5px;
+    letter-spacing: 5px;
   }
 }
 
 .heading-ja {
   font-size: 14px;
-  letter-spacing: 0.08px;
-  padding-left: 0.08px;
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: 1.12px;
+  margin-top: 14px;
 }
 @media screen and (min-width: 768px) {
   .heading-ja {
     font-size: 16px;
+    letter-spacing: 1.28px;
   }
 }
 
@@ -291,11 +299,20 @@ layout > section
 layout > container
 ------------------------------
 */
-.container {
-  padding: 0 15px;
-  margin: 0 auto;
-  max-width: 1170px;
+.inner {
+  padding-left: 15px;
+  padding-right: 15px;
 }
+@media screen and (min-width: 768px) {
+  .inner {
+    padding-left: 30px;
+    padding-right: 30px;
+    max-width: calc(var(--width-inner) + 60px);
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
 /*!
 layout > footer
 ------------------------------
@@ -374,16 +391,6 @@ header
 }
 .header__link:hover {
   color: #f5810e;
-}
-
-.header__button {
-  font-weight: 700;
-  letter-spacing: 0.48px;
-  padding: 8px 28px;
-  display: inline-block;
-  border-radius: 60px;
-  border: 2px solid #111;
-  background: #fff;
 }
 
 .header__open {
@@ -562,17 +569,6 @@ header
     margin-top: 30px;
   }
 }
-.mv__button a {
-  text-align: center;
-  font-weight: 700;
-  letter-spacing: 0.48px;
-  color: #fff;
-  display: inline-block;
-  padding: 8px 28px;
-  border-radius: 60px;
-  border: 2px solid #fff;
-  background: #111;
-}
 
 .mv__image {
   position: absolute;
@@ -664,20 +660,6 @@ header
   .news {
     padding-top: 50px;
     padding-bottom: 50px;
-  }
-}
-
-.news__inner {
-  padding-left: 15px;
-  padding-right: 15px;
-}
-@media screen and (min-width: 768px) {
-  .news__inner {
-    padding-left: 30px;
-    padding-right: 30px;
-    max-width: calc(var(--width-inner) + 60px);
-    margin-left: auto;
-    margin-right: auto;
   }
 }
 
@@ -957,15 +939,6 @@ about
     margin-top: 15px;
   }
 }
-.about__button button {
-  font-weight: 700;
-  letter-spacing: 0.48px;
-  padding: 8px 28px;
-  display: inline-block;
-  border-radius: 60px;
-  border: 2px solid var(--color-black);
-  background: var(--color-white);
-}
 
 /*!
 movie
@@ -986,40 +959,6 @@ movie
 .movie__inner {
   padding-left: 15px;
   padding-right: 15px;
-}
-
-.movie__title {
-  text-align: center;
-}
-
-.movie__title-en {
-  font-family: var(--font-family-en);
-  font-size: 38px;
-  font-weight: 700;
-  line-height: 1;
-  letter-spacing: 3.8px;
-  text-transform: uppercase;
-}
-@media screen and (min-width: 768px) {
-  .movie__title-en {
-    font-size: 50px;
-    letter-spacing: 5px;
-  }
-}
-
-.movie__title-ja {
-  font-family: var(--font-family-en);
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 1;
-  letter-spacing: 1.12px;
-  margin-top: 14px;
-}
-@media screen and (min-width: 768px) {
-  .movie__title-ja {
-    font-size: 16px;
-    letter-spacing: 1.28px;
-  }
 }
 
 .movie__iframe {

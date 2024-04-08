@@ -71,16 +71,6 @@ header
   }
 }
 
-.header__button {
-  font-weight: 700;
-  letter-spacing: 0.48px;
-  padding: calc(10px - 2px) calc(30px - 2px);
-  display: inline-block;
-  border-radius: 60px;
-  border: 2px solid #111;
-  background: #fff;
-}
-
 .header__open {
   margin-top: 3px;
 
@@ -265,18 +255,6 @@ header
     text-align: left;
     margin-top: 30px;
   }
-
-  a {
-    text-align: center;
-    font-weight: 700;
-    letter-spacing: 0.48px;
-    color: #fff;
-    display: inline-block;
-    padding: calc(10px - 2px) calc(30px - 2px);
-    border-radius: 60px;
-    border: 2px solid #fff;
-    background: #111;
-  }
 }
 
 .mv__image {
@@ -370,19 +348,6 @@ header
   @include mq(md) {
     padding-top: 50px;
     padding-bottom: 50px;
-  }
-}
-
-.news__inner {
-  padding-left: 15px;
-  padding-right: 15px;
-
-  @include mq(md) {
-    padding-left: 30px;
-    padding-right: 30px;
-    max-width: calc(var(--width-inner) + 30px * 2);
-    margin-left: auto;
-    margin-right: auto;
   }
 }
 
@@ -655,16 +620,6 @@ about
   @include mq(md) {
     margin-top: 15px;
   }
-
-  & button {
-    font-weight: 700;
-    letter-spacing: 0.48px;
-    padding: calc(10px - 2px) calc(30px - 2px);
-    display: inline-block;
-    border-radius: 60px;
-    border: 2px solid var(--color-black);
-    background: var(--color-white);
-  }
 }
 
 /*!
@@ -685,38 +640,6 @@ movie
 .movie__inner {
   padding-left: 15px;
   padding-right: 15px;
-}
-
-.movie__title {
-  text-align: center;
-}
-
-.movie__title-en {
-  font-family: var(--font-family-en);
-  font-size: 38px;
-  font-weight: 700;
-  line-height: 1;
-  letter-spacing: 3.8px;
-  text-transform: uppercase;
-
-  @include mq(md) {
-    font-size: 50px;
-    letter-spacing: 5px;
-  }
-}
-
-.movie__title-ja {
-  font-family: var(--font-family-en);
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 1;
-  letter-spacing: 1.12px;
-  margin-top: 14px;
-
-  @include mq(md) {
-    font-size: 16px;
-    letter-spacing: 1.28px;
-  }
 }
 
 .movie__iframe {

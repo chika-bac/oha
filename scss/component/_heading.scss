@@ -4,27 +4,33 @@
 component > heading
 ------------------------------
 */
+.heading{
+  text-align: center;
+  font-family: var(--font-family-en);
+}
+
 .heading-en {
   font-size: 38px;
-  font-family: var(--font-family-en);
-  letter-spacing: 0.1px;
-  text-align: center;
-  text-transform: uppercase;
   font-weight: 700;
-  padding-left: 3.8px;
+  line-height: 1;
+  letter-spacing: 3.8px;
+  text-transform: uppercase;
 
   @include mq(md) {
     font-size: 50px;
-    padding-left: 5px;
+    letter-spacing: 5px;
   }
 }
 
 .heading-ja {
   font-size: 14px;
-  letter-spacing: 0.08px;
-  padding-left: 0.08px;
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: 1.12px;
+  margin-top: 14px;
 
   @include mq(md) {
     font-size: 16px;
+    letter-spacing: 1.28px;
   }
 }

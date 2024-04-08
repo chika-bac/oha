@@ -666,3 +666,78 @@ about
     background: var(--color-white);
   }
 }
+
+/*!
+movie
+------------------------------
+*/
+.movie {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background: url(../../images/section-bg.jpg) repeat top left / 529px auto;
+
+  @include mq(md) {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+}
+
+.movie__inner {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.movie__title {
+  text-align: center;
+}
+
+.movie__title-en {
+  font-family: var(--font-family-en);
+  font-size: 38px;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: 3.8px;
+  text-transform: uppercase;
+
+  @include mq(md) {
+    font-size: 50px;
+    letter-spacing: 5px;
+  }
+}
+
+.movie__title-ja {
+  font-family: var(--font-family-en);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: 1.12px;
+  margin-top: 14px;
+
+  @include mq(md) {
+    font-size: 16px;
+    letter-spacing: 1.28px;
+  }
+}
+
+.movie__iframe {
+  margin-top: 32px;
+  text-align: center;
+
+  @include mq(md) {
+    margin-top: 56px;
+  }
+
+  & iframe {
+    width: 345px;
+    // 画面幅を小さくした時にはみ出さないように
+    max-width: 100%;
+    height: auto;
+    // 横/縦の比率を保ったままにできる
+    aspect-ratio: 345 / 194;
+
+    @include mq(md) {
+      width: 640px;
+      aspect-ratio: 640 / 360;
+    }
+  }
+}

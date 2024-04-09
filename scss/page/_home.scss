@@ -1,5 +1,10 @@
 @use "../global" as *;
 
+// はみ出し検証用
+// * {
+//   outline: 2px solid blue;
+// }
+
 .hidden-sp {
   @include mq(sm) {
     display: none;
@@ -126,39 +131,39 @@ header
   }
 }
 
-.drawer-content {
-  width: 320px;
-  height: 100%;
-  position: fixed;
-  top: 0;
-  right: 0;
-  background: #f7ba1a;
-  // z-index: 50;
-  padding: 86px 40px 40px;
-  transform: translateX(100%);
-  transition: transform 0.3s linear;
+// .drawer-content {
+//   width: 320px;
+//   height: 100%;
+//   position: fixed;
+//   top: 0;
+//   right: 0;
+//   background: #f7ba1a;
+//   z-index: 50;
+//   padding: 86px 40px 40px;
+//   transform: translateX(100%);
+//   transition: transform 0.3s linear;
 
-  &.is-checked {
-    transform: translateX(0);
-  }
-}
+//   &.is-checked {
+//     transform: translateX(0);
+//   }
+// }
 
-.drawer-content__menu {
-}
+// .drawer-content__menu {
+// }
 
-.drawer-content__link {
-  display: block;
-  padding-top: 14px;
-  padding-bottom: 14px;
-  text-align: right;
-  font-weight: 700;
-  letter-spacing: 0.48px;
-}
+// .drawer-content__link {
+//   display: block;
+//   padding-top: 14px;
+//   padding-bottom: 14px;
+//   text-align: right;
+//   font-weight: 700;
+//   letter-spacing: 0.48px;
+// }
 
-.drawer-content__button {
-  margin-top: 14px;
-  text-align: right;
-}
+// .drawer-content__button {
+//   margin-top: 14px;
+//   text-align: right;
+// }
 
 .mv {
   border-radius: 20px;
@@ -663,4 +668,123 @@ movie
       aspect-ratio: 640 / 360;
     }
   }
+}
+
+/*!
+how-to-use
+------------------------------
+*/
+.how-to-use {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.how-to-use__inner {
+}
+
+.how-to-use__boxes {
+  margin-top: 104px;
+  display: flex;
+  flex-direction: column;
+  gap: 112px;
+}
+
+.how-to-use__box {
+  border-radius: 30px;
+  background: #fffbf0;
+  padding: 54px 40px 48px;
+}
+
+.how-to-use__box-title {
+  text-align: center;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 1.8px;
+  // イラスト配置の起点として
+  position: relative;
+
+  & img {
+    position: absolute;
+    width: 85px;
+    // PCで右寄せになるのでright起点にする
+    right: 50%;
+    // rightを起点に中央寄せ
+    transform: translateX(50%);
+    // 下から100％（要素の一番上）+16px上に配置できる
+    bottom: calc(100% + 16px);
+  }
+}
+
+.how-to-use__steps {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.how-to-use__step {
+}
+
+.step-box {
+  padding-top: 45px;
+  position: relative;
+}
+
+.step-box__head {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 3px;
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  border: 3px solid var(--color-black);
+  background: var(--color-orange);
+  font-family: var(--font-family-en);
+  line-height: 1;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+
+  .is-type2 & {
+    background-color: var(--color-yellow);
+  }
+}
+
+.step-box__head-text {
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 1.3px;
+  text-transform: uppercase;
+}
+
+.step-box__head-number {
+  color: var(--color-white);
+  font-size: 34px;
+  font-weight: 700;
+  letter-spacing: 3.4px;
+}
+
+.step-box__body {
+  border-radius: 30px;
+  border: 3px solid var(--color-black);
+  background: var(--color-white);
+  // 枠の上部が表示されるように
+  overflow: hidden;
+  padding: 50px 20px 26px;
+  text-align: center;
+}
+
+.step-box__image {
+  & img {
+    width: 160px;
+  }
+}
+
+.step-box__text {
+  font-weight: 700;
+  letter-spacing: 0.48px;
+  margin-top: 10px;
 }

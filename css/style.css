@@ -957,6 +957,12 @@ how-to-use
   padding-top: 60px;
   padding-bottom: 60px;
 }
+@media screen and (min-width: 768px) {
+  .how-to-use {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+}
 
 .how-to-use__boxes {
   margin-top: 104px;
@@ -969,11 +975,23 @@ how-to-use
           flex-direction: column;
   gap: 112px;
 }
+@media screen and (min-width: 768px) {
+  .how-to-use__boxes {
+    margin-top: 89px;
+    gap: 75px;
+  }
+}
 
 .how-to-use__box {
   border-radius: 30px;
   background: #fffbf0;
   padding: 54px 40px 48px;
+}
+@media screen and (min-width: 768px) {
+  .how-to-use__box {
+    border-radius: 40px;
+    padding: 44px 10px 56px;
+  }
 }
 
 .how-to-use__box-title {
@@ -983,6 +1001,17 @@ how-to-use
   letter-spacing: 1.8px;
   position: relative;
 }
+@media screen and (min-width: 768px) {
+  .how-to-use__box-title {
+    font-size: 22px;
+    letter-spacing: 2.2px;
+    padding-right: 95px;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin: 0 auto;
+  }
+}
 .how-to-use__box-title img {
   position: absolute;
   width: 85px;
@@ -990,6 +1019,24 @@ how-to-use
   -webkit-transform: translateX(50%);
           transform: translateX(50%);
   bottom: calc(100% + 16px);
+}
+@media screen and (min-width: 768px) {
+  .how-to-use__box-title img {
+    right: 0;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    bottom: 0;
+  }
+}
+@media screen and (min-width: 768px) {
+  .is-type2 .how-to-use__box-title {
+    padding-right: 0;
+    padding-left: 95px;
+  }
+  .is-type2 .how-to-use__box-title img {
+    right: auto;
+    left: 0;
+  }
 }
 
 .how-to-use__steps {
@@ -1002,6 +1049,25 @@ how-to-use
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 20px;
+}
+@media screen and (min-width: 768px) {
+  .how-to-use__steps {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    gap: 24px;
+    max-width: 948px;
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.how-to-use__step {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
 }
 
 .step-box {
@@ -1060,12 +1126,17 @@ how-to-use
   border: 3px solid var(--color-black);
   background: var(--color-white);
   overflow: hidden;
-  padding: 50px 20px 26px;
+  padding: 50px 10px 26px;
   text-align: center;
 }
 
 .step-box__image img {
   width: 160px;
+}
+@media screen and (min-width: 768px) {
+  .step-box__image img {
+    width: 200px;
+  }
 }
 
 .step-box__text {

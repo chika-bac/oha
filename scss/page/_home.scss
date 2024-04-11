@@ -977,3 +977,157 @@ merit
     margin-top: 16px;
   }
 }
+
+/*!
+compare
+------------------------------
+*/
+.compare {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: var(--color-white);
+
+  @include mq(md) {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+}
+
+.compare__inner {
+}
+
+.compare__title {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1;
+  text-align: center;
+
+  @include mq(md) {
+    font-size: 24px;
+  }
+}
+
+.compare__content {
+  margin-top: 42px;
+  // 画面内に入りきらない分はスクロールする
+  overflow-x: auto;
+  padding-bottom: 38px;
+
+  @include mq(md) {
+    margin-top: 60px;
+    padding-bottom: 0;
+  }
+}
+
+.compare__table {
+  width: 620px;
+  // テーブルセルのサイズを均等に表示（幅を指定しないセルだけ）
+  table-layout: fixed;
+  margin-left: auto;
+  margin-right: auto;
+
+  @include mq(md) {
+    width: 1000px;
+  }
+
+  th,
+  td {
+    text-align: center;
+    font-weight: 700;
+    height: 60px;
+    // テキストを上下中央揃えに
+    vertical-align: middle;
+
+    @include mq(md) {
+      height: 100px;
+    }
+
+    &:nth-child(1) {
+      width: 130px;
+
+      @include mq(md) {
+        width: 250px;
+      }
+    }
+
+    &:nth-child(2) {
+      width: 90px;
+      background: #fff9e5;
+      font-size: 16px;
+      letter-spacing: 0.48px;
+
+      @include mq(md) {
+        width: 250px;
+        font-size: 25px;
+        letter-spacing: 0.75px;
+      }
+
+      img {
+        width: 70px;
+
+        @include mq(md) {
+          width: 123px;
+        }
+      }
+    }
+  }
+
+  thead th {
+    letter-spacing: 1.6px;
+
+    @include mq(md) {
+      letter-spacing: 2px;
+    }
+  }
+
+  tbody {
+    tr {
+      border-top: 1.5px solid var(--color-black);
+
+      @include mq(md) {
+        border-top: 3px solid var(--color-black);
+      }
+    }
+
+    th,
+    td {
+      height: calc(60px - 1.5px);
+
+      @include mq(md) {
+        height: 100px;
+      }
+    }
+  }
+
+  th {
+    letter-spacing: 0.48px;
+
+    @include mq(md) {
+      font-size: 20px;
+      letter-spacing: 0.6px;
+    }
+  }
+
+  td {
+    font-size: 14px;
+    letter-spacing: 0.42px;
+
+    @include mq(md) {
+      font-size: 16px;
+      letter-spacing: 0.48px;
+    }
+  }
+}
+
+.compare__attention {
+  margin-top: 11px;
+  color: #686868;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1;
+  text-align: center;
+
+  @include mq(md) {
+    display: none;
+  }
+}

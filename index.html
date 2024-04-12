@@ -367,5 +367,115 @@
       </div>
     </section>
     <!-- end compare -->
+
+    <!-- contact -->
+    <section class="contact">
+      <div class="contact__inner inner">
+        <div class="contact__box">
+          <div class="contact__title">
+            <h2 class="heading">
+              <div class="heading-en">contact</div>
+              <div class="heading-ja">お問い合わせ</div>
+            </h2>
+          </div>
+          <form action="" class="contact__form">
+            <div class="contact__fields">
+              <div class="contact__field">
+                <div class="form-field">
+                  <div class="form-field__head">
+                    <label for="your-name" class="form-field__label">お名前</label>
+                    <span class="form-field__tag">必須</span>
+                  </div>
+                  <div class="form-field__item">
+                    <input type="text" name="" id="your-name" placeholder="田中 おは次郎" class="form-text" />
+                  </div>
+                </div>
+              </div>
+              <div class="contact__field">
+                <div class="form-field">
+                  <div class="form-field__head">
+                    <label for="your-email" class="form-field__label">メールアドレス</label>
+                    <span class="form-field__tag">必須</span>
+                  </div>
+                  <div class="form-field__item">
+                    <input type="email" name="" id="your-email" placeholder="info@oha.com" class="form-text" />
+                  </div>
+                </div>
+              </div>
+              <div class="contact__field">
+                <div class="form-field">
+                  <div class="form-field__head">
+                    <div class="form-field__label">お問い合わせ項目</div>
+                    <span class="form-field__tag">必須</span>
+                  </div>
+                  <div class="form-field__item">
+                    <div class="form-field__radios">
+                      <label class="form-radio">
+                        <input type="radio" name="your-content" id="" class="form-radio__input" checked />
+                        <span class="form-radio__text">アプリの質問</span>
+                      </label>
+                      <label class="form-radio">
+                        <input type="radio" name="your-content" id="" class="form-radio__input" />
+                        <span class="form-radio__text">取材の依頼</span>
+                      </label>
+                      <label class="form-radio">
+                        <input type="radio" name="your-content" id="" class="form-radio__input" />
+                        <span class="form-radio__text">その他</span>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="contact__field">
+                <div class="form-field">
+                  <div class="form-field__head">
+                    <label for="your-age" class="form-field__label">年代</label>
+                    <span class="form-field__tag is-option">任意</span>
+                  </div>
+                  <div class="form-field__item">
+                    <select name="" id="your-age" class="form-select">
+                      <option value="">選択してください</option>
+                      <option value="">10代</option>
+                      <option value="">20代</option>
+                      <option value="">30代</option>
+                      <option value="">40代</option>
+                      <option value="">50代</option>
+                      <option value="">60代</option>
+                      <option value="">70代</option>
+                      <option value="">80代</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <div class="contact__field">
+                <div class="form-field">
+                  <div class="form-field__head">
+                    <label for="your-message" class="form-field__label">お問い合わせ内容</label>
+                    <span class="form-field__tag">必須</span>
+                  </div>
+                  <div class="form-field__item">
+                    <textarea type="text" name="" id="your-message" placeholder="ここに文章を入力してくださいここに文章を入力してください" class="form-textarea"></textarea>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="contact__privacy">
+              <label class="form-checkbox">
+                <input type="checkbox" name="" id="" class="form-checkbox__input" />
+                <span class="form-checkbox__text"> <a href="" target="_blank">プライバシーポリシー</a>に同意する </span>
+              </label>
+            </div>
+            <div class="contact__button">
+              <input type="submit" value="送信する" class="button" />
+              <!-- input:submit: 擬似要素が使えない
+                    button: 擬似要素が使える
+                    どちらでも良いのでデザイン次第で決める -->
+              <!-- <button class="button">送信する</button> -->
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+    <!-- end contact -->
   </body>
 </html>

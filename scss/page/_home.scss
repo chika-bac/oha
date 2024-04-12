@@ -18,6 +18,11 @@
   }
 }
 
+.inline-block {
+  // 幅を小さくしたときに改行する位置を指定（htmlで）
+  display: inline-block;
+}
+
 /*!
 header
 ------------------------------
@@ -976,6 +981,40 @@ merit
     font-size: 15px;
     margin-top: 16px;
   }
+}
+
+/*!
+cta
+------------------------------
+*/
+.cta {
+  background: var(--color-gradation);
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+
+  @include mq(md) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+
+.cta__inner {
+}
+
+.cta__text {
+  font-weight: 700;
+  line-height: 2;
+  letter-spacing: 0.48px;
+
+  @include mq(md) {
+    font-size: 18px;
+    letter-spacing: 0.54px;
+  }
+}
+
+.cta__button {
+  margin-top: 16px;
 }
 
 /*!

@@ -436,6 +436,34 @@ layout > container
 layout > footer
 ------------------------------
 */
+.footer {
+  background-color: var(--color-black);
+  padding-top: 18px;
+  padding-bottom: 18px;
+  text-align: center;
+}
+
+.footer__copyright {
+  color: #f5f5f5;
+  font-size: 12px;
+  line-height: 1;
+  letter-spacing: 0.96px;
+}
+
+.page-top {
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+  width: min(13.3333333333%, 50px);
+}
+@media screen and (min-width: 768px) {
+  .page-top {
+    right: 16px;
+    bottom: 30px;
+    width: 70px;
+  }
+}
+
 .hidden-sp {
   display: none;
 }
@@ -449,6 +477,10 @@ layout > footer
   .hidden-pc {
     display: none;
   }
+}
+
+.inline-block {
+  display: inline-block;
 }
 
 /*!
@@ -1410,6 +1442,39 @@ merit
     font-size: 15px;
     margin-top: 16px;
   }
+}
+
+/*!
+cta
+------------------------------
+*/
+.cta {
+  background: var(--color-gradation);
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+@media screen and (min-width: 768px) {
+  .cta {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+
+.cta__text {
+  font-weight: 700;
+  line-height: 2;
+  letter-spacing: 0.48px;
+}
+@media screen and (min-width: 768px) {
+  .cta__text {
+    font-size: 18px;
+    letter-spacing: 0.54px;
+  }
+}
+
+.cta__button {
+  margin-top: 16px;
 }
 
 /*!

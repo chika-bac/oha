@@ -12,6 +12,13 @@ component > input > text/email
   background: var(--color-white);
   // border分を考慮
   padding: calc(15px - 3px) calc(16px - 3px) calc(14px - 3px);
+  transition: border-color 0.3s;
+
+  &:hover,
+  &:focus {
+    border-color: var(--color-yellow);
+    outline: none;
+  }
 }
 
 /*!
@@ -21,6 +28,15 @@ component > input > radio
 
 .form-radio {
   line-height: calc(23px / 16px); // 23px
+
+  // ラジオボタンhoverでアニメーションする場合
+  // &:hover {
+  //   .form-radio__text {
+  //     &::before {
+  //       border-color: var(--color-yellow);
+  //     }
+  //   }
+  // }
 }
 
 .form-radio__input {
@@ -70,6 +86,8 @@ component > input > radio
     height: 24px;
     border: 3px solid var(--color-black);
     left: 0;
+    // ラジオボタンhoverでアニメーションする場合
+    transition: border-color 0.3s;
   }
 
   // ラジオボタンの中身
@@ -96,6 +114,14 @@ component > select
   padding: calc(15px - 3px) calc(46px - 3px) calc(14px - 3px) calc(16px - 3px);
   // arrowアイコンは背景画像として配置
   background: url(../../images/select-arrow.png) no-repeat center right 18px / 9.451px 6.969px;
+
+  transition: border-color 0.3s;
+
+  &:hover,
+  &:focus {
+    border-color: var(--color-yellow);
+    outline: none;
+  }
 }
 
 /*!
@@ -110,6 +136,14 @@ component > textarea
   background: var(--color-white);
   // border分を考慮
   padding: calc(16px - 3px);
+
+  transition: border-color 0.3s;
+
+  &:hover,
+  &:focus {
+    border-color: var(--color-yellow);
+    outline: none;
+  }
 }
 
 /*!
@@ -173,5 +207,10 @@ component > input > checkbox
     text-decoration-line: underline;
     // 親要素を継承
     font-weight: inherit;
+    transition: color 0.3s;
+
+    &:hover {
+      color: var(--color-orange);
+    }
   }
 }

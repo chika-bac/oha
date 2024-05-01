@@ -14,6 +14,7 @@ component > button
   display: inline-block;
   text-align: center;
   border: 2px solid currentColor;
+  transition: all 0.3s;
 
   &:hover {
     cursor: pointer;
@@ -22,7 +23,6 @@ component > button
 
 .button-white {
   background-color: var(--color-white);
-  transition: background-color 0.3s;
 
   &:hover {
     background-color: var(--color-yellow);
@@ -32,7 +32,7 @@ component > button
 .button-black {
   background-color: var(--color-black);
   color: var(--color-white);
-  transition: all 0.3s;
+  // transition: all 0.3s;
 
   &:hover {
     background-color: var(--color-white);

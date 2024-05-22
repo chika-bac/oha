@@ -555,7 +555,7 @@ layout > header
   width: 36px;
   height: 3px;
   border-radius: 6px;
-  background: #111;
+  background: var(--color-black);
   -webkit-transition: top 0.3s linear, -webkit-transform 0.3s linear;
   transition: top 0.3s linear, -webkit-transform 0.3s linear;
   transition: transform 0.3s linear, top 0.3s linear;
@@ -566,6 +566,46 @@ layout > header
 }
 .drawer-icon__bar:nth-of-type(3) {
   top: 18px;
+}
+
+/*!
+layout > header > drawer
+------------------------------
+*/
+.drawer-content {
+  width: 320px;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  background: #f7ba1a;
+  z-index: 50;
+  padding: 86px 40px 40px;
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+  -webkit-transition: -webkit-transform 0.3s linear;
+  transition: -webkit-transform 0.3s linear;
+  transition: transform 0.3s linear;
+  transition: transform 0.3s linear, -webkit-transform 0.3s linear;
+}
+.drawer-content.is-checked {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+
+.drawer-content__link {
+  display: block;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  text-align: right;
+  font-weight: 700;
+  line-height: 1.7;
+  letter-spacing: 0.48px;
+}
+
+.drawer-content__button {
+  margin-top: 14px;
+  text-align: right;
 }
 
 /*!

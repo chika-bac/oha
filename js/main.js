@@ -54,3 +54,41 @@ const swiper = new Swiper("#js-gallery-swiper", {
     prevEl: "#js-gallery-prev",
   },
 });
+
+/*
+Modal: js
+================================================ */
+// const modalOpenItems = document.querySelectorAll(".js-modal-open");
+// const modalCloseItems = document.querySelectorAll(".js-modal-close");
+// const aboutModal = document.querySelector("#js-about-modal");
+
+// modalOpenItems.forEach((modalOpenItem) => {
+//   modalOpenItem.addEventListener("click", (e) => {
+//     e.preventDefault();
+//     if (aboutModal) {
+//       aboutModal.showModal();
+//     }
+//   });
+// });
+
+// modalCloseItems.forEach((modalCloseItem) => {
+//   modalCloseItem.addEventListener("click", (e) => {
+//     e.preventDefault();
+//     if (aboutModal) {
+//       aboutModal.close();
+//     }
+//   });
+// });
+
+/*
+Modal: jQuery
+================================================ */
+$(".js-modal-open").click(function (e) {
+  e.preventDefault();
+  $("#js-about-modal")[0].showModal();
+});
+
+$(".js-modal-close").click(function (e) {
+  e.preventDefault();
+  $("#js-about-modal")[0].close();
+});

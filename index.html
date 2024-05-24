@@ -21,10 +21,15 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet" />
 
+    <!-- swiper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <!-- css -->
     <link rel="stylesheet" href="./css/style.css" />
+
     <!-- jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js" defer></script>
+    <!-- swiper -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
     <!-- js -->
     <script src="./js/main.js" defer></script>
   </head>
@@ -441,6 +446,46 @@
     <!-- end Q&A -->
 
     <!-- gallery -->
+    <section class="gallery">
+      <div class="gallery__inner inner">
+        <div class="gallery__title">
+          <h2 class="heading">
+            <div class="heading-en">gallery</div>
+            <div class="heading-ja">ギャラリー</div>
+          </h2>
+        </div>
+        <div class="gallery__slider">
+          <div id="js-gallery-swiper" class="swiper gallery__swiper">
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide gallery__slide">
+                <div class="gallery-card">
+                  <div class="gallery-card__image"><img src="./images/gallery-1@3x.png" alt="" /></div>
+                  <p class="gallery-card__text">最高な海。を拝んでいる私最高...</p>
+                </div>
+              </div>
+              <div class="swiper-slide gallery__slide">
+                <div class="gallery-card">
+                  <div class="gallery-card__image"><img src="./images/gallery-2@3x.png" alt="" /></div>
+                  <p class="gallery-card__text">モーニングは一番のり。今日も私えらい。</p>
+                </div>
+              </div>
+              <div class="swiper-slide gallery__slide">
+                <div class="gallery-card">
+                  <div class="gallery-card__image"><img src="./images/gallery-3@3x.png" alt="" /></div>
+                  <p class="gallery-card__text">風車のある公園ヨガ。みんな私に釘付け。</p>
+                </div>
+              </div>
+            </div>
+            <div id="js-gallery-pagination" class="swiper-pagination gallery__pagination"></div>
+
+            <div id="js-gallery-prev" class="swiper-button-prev gallery__prev"></div>
+            <div id="js-gallery-next" class="swiper-button-next gallery__next"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- end gallery -->
 
     <!-- contact -->

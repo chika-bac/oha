@@ -37,3 +37,20 @@ $(".js-accordion").on("click", function (e) {
     $(this).next().slideDown();
   }
 });
+
+/*
+Swiper
+================================================ */
+const swiper = new Swiper("#js-gallery-swiper", {
+  spaceBetween: 70,
+  loop: true,
+
+  pagination: {
+    el: "#js-gallery-pagination",
+  },
+
+  navigation: {
+    nextEl: "#js-gallery-next",
+    prevEl: "#js-gallery-prev",
+  },
+});

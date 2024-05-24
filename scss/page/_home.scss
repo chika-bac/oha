@@ -1212,6 +1212,136 @@ qa
 }
 
 /*!
+gallery
+------------------------------
+*/
+.gallery {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @include mq(md) {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+}
+
+.gallery__inner {
+  @include mq(md) {
+    padding-left: 30px;
+    padding-right: 30px;
+    max-width: calc(800px + 30px * 2);
+  }
+}
+
+.gallery__title {
+}
+
+.gallery__slider {
+  margin-top: 30px;
+
+  @include mq(md) {
+    margin-top: 60px;
+  }
+}
+
+.gallery__swiper {
+  // 枠からページネーションの距離16px + ページネーションの高さ10px
+  padding-bottom: calc(16px + 10px);
+  padding-left: 5px;
+  padding-right: 5px;
+
+  @include mq(md) {
+    padding-left: calc(20px + 50px);
+    padding-right: calc(20px + 50px);
+  }
+}
+
+.gallery__slide {
+}
+
+.gallery-card {
+  border-radius: 20px;
+  border: 3px solid var(--color-black);
+  background: var(--color-white);
+  box-shadow: 0px 9px 30px 0px #f4f4f4;
+  padding: 15px 15px 11px 15px;
+
+  @include mq(md) {
+    border-radius: 30px;
+    padding: 20px 20px 18px 20px;
+  }
+}
+
+.gallery-card__image {
+  text-align: center;
+  & img {
+    border-radius: 10px;
+
+    @include mq(md) {
+      border-radius: 20px;
+    }
+  }
+}
+
+.gallery-card__text {
+  margin-top: 11px;
+  text-align: center;
+  font-size: 14px;
+
+  @include mq(md) {
+    margin-top: 18px;
+    font-size: 16px;
+  }
+}
+
+.gallery__pagination {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  bottom: 0 !important;
+}
+
+.swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  background: #bcbcbc;
+  opacity: 1;
+
+  &.swiper-pagination-bullet-active {
+    background: var(--color-yellow);
+  }
+}
+
+.gallery__prev,
+.gallery__next {
+  width: 40px;
+  height: 40px;
+  margin-top: -40px;
+
+  @include mq(md) {
+    width: 50px;
+    height: 50px;
+  }
+
+  &::after {
+    // swiperデフォルトの矢印を削除
+    display: none;
+  }
+}
+
+.gallery__prev {
+  left: 0;
+  background: url(../../images/prev-icon.png) no-repeat center center / contain;
+}
+
+.gallery__next {
+  right: 0;
+  background: url(../../images/next-icon.png) no-repeat center center / contain;
+}
+
+/*!
 contact
 ------------------------------
 */

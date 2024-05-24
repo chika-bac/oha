@@ -1888,6 +1888,140 @@ qa
 }
 
 /*!
+gallery
+------------------------------
+*/
+.gallery {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+@media screen and (min-width: 768px) {
+  .gallery {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .gallery__inner {
+    padding-left: 30px;
+    padding-right: 30px;
+    max-width: 860px;
+  }
+}
+
+.gallery__slider {
+  margin-top: 30px;
+}
+@media screen and (min-width: 768px) {
+  .gallery__slider {
+    margin-top: 60px;
+  }
+}
+
+.gallery__swiper {
+  padding-bottom: 26px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+@media screen and (min-width: 768px) {
+  .gallery__swiper {
+    padding-left: 70px;
+    padding-right: 70px;
+  }
+}
+
+.gallery-card {
+  border-radius: 20px;
+  border: 3px solid var(--color-black);
+  background: var(--color-white);
+  -webkit-box-shadow: 0px 9px 30px 0px #f4f4f4;
+          box-shadow: 0px 9px 30px 0px #f4f4f4;
+  padding: 15px 15px 11px 15px;
+}
+@media screen and (min-width: 768px) {
+  .gallery-card {
+    border-radius: 30px;
+    padding: 20px 20px 18px 20px;
+  }
+}
+
+.gallery-card__image {
+  text-align: center;
+}
+.gallery-card__image img {
+  border-radius: 10px;
+}
+@media screen and (min-width: 768px) {
+  .gallery-card__image img {
+    border-radius: 20px;
+  }
+}
+
+.gallery-card__text {
+  margin-top: 11px;
+  text-align: center;
+  font-size: 14px;
+}
+@media screen and (min-width: 768px) {
+  .gallery-card__text {
+    margin-top: 18px;
+    font-size: 16px;
+  }
+}
+
+.gallery__pagination {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 12px;
+  bottom: 0 !important;
+}
+
+.swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  background: #bcbcbc;
+  opacity: 1;
+}
+.swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background: var(--color-yellow);
+}
+
+.gallery__prev,
+.gallery__next {
+  width: 40px;
+  height: 40px;
+  margin-top: -40px;
+}
+@media screen and (min-width: 768px) {
+  .gallery__prev,
+  .gallery__next {
+    width: 50px;
+    height: 50px;
+  }
+}
+.gallery__prev::after,
+.gallery__next::after {
+  display: none;
+}
+
+.gallery__prev {
+  left: 0;
+  background: url(../../images/prev-icon.png) no-repeat center center/contain;
+}
+
+.gallery__next {
+  right: 0;
+  background: url(../../images/next-icon.png) no-repeat center center/contain;
+}
+
+/*!
 contact
 ------------------------------
 */

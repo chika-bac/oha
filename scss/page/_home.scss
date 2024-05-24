@@ -1037,6 +1037,181 @@ compare
 }
 
 /*!
+qa
+------------------------------
+*/
+.qa {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @include mq(md) {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+}
+
+.qa__inner {
+  @include mq(md) {
+    // 画面幅を小さくした時の左右余白
+    padding-left: 30px;
+    padding-right: 30px;
+    max-width: calc(800px + 30px * 2);
+  }
+}
+
+.qa__title {
+}
+
+.qa__boxes {
+  margin-top: 52px;
+  display: flex;
+  flex-direction: column;
+  gap: 42px;
+
+  @include mq(md) {
+    margin-top: 74px;
+  }
+}
+
+.qa__box {
+}
+
+.qa-box {
+  border-radius: 10px;
+  border: 3px solid var(--color-black);
+  background: var(--color-white);
+
+  // アコーディオンが開いている時
+  &.is-open {
+    // arrow icon
+    .qa-box__head::after {
+      transform: rotate(0deg);
+    }
+  }
+}
+
+.qa-box__head {
+  // borderの幅分を引いて余白を調整
+  padding: calc(32px - 3px) calc(40px - 3px) calc(20px - 3px) calc(15px - 3px);
+  position: relative;
+  display: block;
+  width: 100%;
+  border-radius: 10px;
+
+  @include mq(md) {
+    padding: calc(32px - 3px) calc(80px - 3px) calc(20px - 3px) calc(20px - 3px);
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 16px;
+    width: 9.26px;
+    height: 6.834px;
+    background: url(../../images/qa-arrow.png) no-repeat center center / contain;
+    transform: rotate(180deg);
+
+    @include mq(md) {
+      right: 22px;
+    }
+  }
+}
+
+.qa-box__head-icon {
+  font-family: var(--font-family-en);
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 1;
+  // letter-spacingでずれた分を修正（スペースが文字の右側にできるため）
+  letter-spacing: 2.2px;
+  text-indent: 2.2px;
+  width: 44px;
+  height: 44px;
+  border-radius: 22px;
+  border: 3px solid var(--color-black);
+  background: var(--color-orange);
+  // 上下左右中央揃え
+  display: grid;
+  place-items: center;
+  position: absolute;
+  top: -26px;
+  left: 12px;
+
+  @include mq(md) {
+    left: 20px;
+  }
+}
+
+.qa-box__head-text {
+  display: block;
+  text-align: left;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 1.12px;
+
+  @include mq(md) {
+    font-size: 16px;
+    line-height: 27px;
+    letter-spacing: 1.28px;
+  }
+}
+
+.qa-box__body {
+  // .qa-box__headで削った分3pxを上paddingに足す
+  padding: calc(10px + 3px) calc(17px - 3px) calc(20px - 3px) calc(15px - 3px);
+  display: none;
+
+  @include mq(md) {
+    padding: calc(0px + 3px) calc(36px - 3px) calc(20px - 3px) calc(20px - 3px);
+  }
+}
+
+.qa-box__a {
+  display: flex;
+  gap: 8px;
+
+  @include mq(md) {
+    gap: 10px;
+  }
+}
+
+.qa-box__a-icon {
+  font-family: var(--font-family-en);
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: 2.2px;
+  text-indent: 2.2px;
+  width: 44px;
+  height: 44px;
+  border-radius: 22px;
+  border: 3px solid var(--color-black);
+  background: var(--color-yellow);
+  // 上下左右中央揃え
+  display: grid;
+  place-items: center;
+  // flexで自動で潰れないように
+  flex-shrink: 0;
+}
+
+.qa-box__a-text {
+  display: block;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 1.12px;
+  // flexの残りの空間を全て使うように
+  flex-grow: 1;
+  padding-top: 8px;
+
+  @include mq(md) {
+    font-size: 16px;
+    line-height: 27px;
+    letter-spacing: 1.28px;
+  }
+}
+
+/*!
 contact
 ------------------------------
 */

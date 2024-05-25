@@ -92,3 +92,30 @@ $(".js-modal-close").click(function (e) {
   e.preventDefault();
   $("#js-about-modal")[0].close();
 });
+
+/*
+Intersection Observer: js
+================================================ */
+const io = new IntersectionObserver((entries) => {
+  entries.forEach((entry, observer) => {
+    if (entry.isIntersecting) {
+      // 要素が表示領域に入った場合にクラスを付与
+      entry.target.classList.add("is-in-view");
+      // 監視を止める
+      observer.unobserve(entry.target);
+    }
+    // 表示領域から外れた場合
+    // else {
+    //   entry.target.classList.remove("is-in-view");
+    // }
+  });
+});
+
+const inViewItems = document.querySelectorAll(".js-in-view");
+inViewItems.forEach((inViewItem) => {
+  io.observe(inViewItem);
+});
+
+// mapを使った書き方
+// const inViewItems = [...document.querySelectorAll(".js-in-view")];
+// inViewItems.map((inViewItem) => io.observe(inViewItem));

@@ -240,6 +240,9 @@ component > heading
   text-align: center;
   font-family: var(--font-family-en);
 }
+.heading span {
+  display: block;
+}
 
 .heading-en {
   font-size: 38px;
@@ -1550,7 +1553,7 @@ merit
 }
 @media screen and (min-width: 768px) {
   .merit_box__img {
-    width: 38.0434782609;
+    width: 38.0434782609%;
   }
 }
 .merit_box__img img {
@@ -1567,7 +1570,7 @@ merit
 }
 @media screen and (min-width: 768px) {
   .merit-box__body {
-    width: 56.5217391304;
+    width: 56.5217391304%;
     margin-top: 0;
   }
 }

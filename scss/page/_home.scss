@@ -876,7 +876,7 @@ merit
   text-align: center;
 
   @include mq(md) {
-    width: calc(350 / 920 * 100);
+    width: calc(350px / 920px * 100%);
   }
 
   & img {
@@ -892,7 +892,7 @@ merit
   margin-top: 18px;
 
   @include mq(md) {
-    width: calc(520 / 920 * 100);
+    width: calc(520px / 920px * 100%);
     margin-top: 0;
   }
 }

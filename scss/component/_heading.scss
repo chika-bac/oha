@@ -4,9 +4,13 @@
 component > heading
 ------------------------------
 */
-.heading{
+.heading {
   text-align: center;
   font-family: var(--font-family-en);
+
+  & span {
+    display: block;
+  }
 }
 
 .heading-en {

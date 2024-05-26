@@ -30,6 +30,15 @@ layout > footer
   // min(最大になる前のサイズ, 最大サイズ)
   width: min(calc(50px / 375px * 100%), 50px);
 
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s, visibility 0.3s;
+
+  &.is-show {
+    opacity: 1;
+    visibility: visible;
+  }
+
   @include mq(md) {
     right: 16px;
     bottom: 30px;

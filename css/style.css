@@ -631,6 +631,14 @@ layout > footer
   right: 10px;
   bottom: 10px;
   width: min(13.3333333333%, 50px);
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: opacity 0.3s, visibility 0.3s;
+  transition: opacity 0.3s, visibility 0.3s;
+}
+.page-top.is-show {
+  opacity: 1;
+  visibility: visible;
 }
 @media screen and (min-width: 768px) {
   .page-top {

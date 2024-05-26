@@ -4,6 +4,12 @@
 foundation > base
 ------------------------------
 */
+
+// スムーススクロール用（JSなし）
+// html {
+//   scroll-behavior: smooth;
+// }
+
 body {
   line-height: var(--line-height-base);
   font-family: var(--font-family-base);

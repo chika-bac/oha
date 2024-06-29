@@ -146,25 +146,25 @@ $('#js-drawer-content a[href^="#"]').on("click", function (e) {
 /*
 Topへ戻るボタンを表示：jQuery
 ================================================ */
-$(window).on("scroll", function (e) {
-  e.preventDefault();
-  // 100pxスクロールするとクラスを付与
-  if ($(window).scrollTop() > 100) {
-    $("#js-page-top").addClass("is-show");
-  } else {
-    $("#js-page-top").removeClass("is-show");
-  }
-});
+// $(window).on("scroll", function (e) {
+//   e.preventDefault();
+//   // 100pxスクロールするとクラスを付与
+//   if ($(window).scrollTop() > 100) {
+//     $("#js-page-top").addClass("is-show");
+//   } else {
+//     $("#js-page-top").removeClass("is-show");
+//   }
+// });
 
 /*
 Topへ戻るボタンを表示：js
 ================================================ */
-// const pageTop = document.querySelector("#js-page-top");
-// window.addEventListener("scroll", (e) => {
-//   e.preventDefault();
-//   if (window.scrollY > 100) {
-//     pageTop.classList.add("is-show");
-//   } else {
-//     pageTop.classList.remove("is-show");
-//   }
-// });
+const pageTop = document.querySelector("#js-page-top");
+window.addEventListener("scroll", (e) => {
+  e.preventDefault();
+  if (window.scrollY > 100) {
+    pageTop.classList.add("is-show");
+  } else {
+    pageTop.classList.remove("is-show");
+  }
+});

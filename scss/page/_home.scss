@@ -598,7 +598,7 @@ movie
 .movie {
   padding-top: 60px;
   padding-bottom: 60px;
-  background: url(../../images/section-bg.jpg) repeat top left / 529px auto;
+  background: url(../images/section-bg.jpg) repeat top left / 529px auto;
 
   @include mq(md) {
     padding-top: 100px;
@@ -1200,7 +1200,7 @@ qa
     right: 16px;
     width: 9.26px;
     height: 6.834px;
-    background: url(../../images/qa-arrow.png) no-repeat center center / contain;
+    background: url(../images/qa-arrow.png) no-repeat center center / contain;
     transform: rotate(180deg);
 
     @include mq(md) {
@@ -1425,12 +1425,12 @@ gallery
 
 .gallery__prev {
   left: 0;
-  background: url(../../images/prev-icon.png) no-repeat center center / contain;
+  background: url(../images/prev-icon.png) no-repeat center center / contain;
 }
 
 .gallery__next {
   right: 0;
-  background: url(../../images/next-icon.png) no-repeat center center / contain;
+  background: url(../images/next-icon.png) no-repeat center center / contain;
 }
 
 /*!
@@ -1441,7 +1441,7 @@ contact
 .contact {
   padding-top: 60px;
   padding-bottom: 60px;
-  background: url(../../images/section-bg.jpg) repeat top left / 529px auto;
+  background: url(../images/section-bg.jpg) repeat top left / 529px auto;
 
   @include mq(md) {
     padding-top: 100px;

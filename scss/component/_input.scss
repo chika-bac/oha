@@ -113,7 +113,7 @@ component > select
   // border分を考慮
   padding: calc(15px - 3px) calc(46px - 3px) calc(14px - 3px) calc(16px - 3px);
   // arrowアイコンは背景画像として配置
-  background: url(../../images/select-arrow.png) no-repeat center right 18px / 9.451px 6.969px;
+  background: url(../images/select-arrow.png) no-repeat center right 18px / 9.451px 6.969px;
 
   transition: border-color 0.3s;
 
@@ -199,7 +199,7 @@ component > input > checkbox
     height: 17.53px;
     left: -1px;
     margin-bottom: 1.2px;
-    background: url(../../images/check-icon.png) no-repeat center center / contain;
+    background: url(../images/check-icon.png) no-repeat center center / contain;
     opacity: 0;
   }
 

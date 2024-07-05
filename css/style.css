@@ -351,7 +351,7 @@ component > select
   background: var(--color-white);
   font-weight: 700;
   padding: 12px 43px 11px 13px;
-  background: url(../../images/select-arrow.png) no-repeat center right 18px/9.451px 6.969px;
+  background: url(../images/select-arrow.png) no-repeat center right 18px/9.451px 6.969px;
   -webkit-transition: border-color 0.3s;
   transition: border-color 0.3s;
 }
@@ -412,7 +412,7 @@ component > input > checkbox
   height: 17.53px;
   left: -1px;
   margin-bottom: 1.2px;
-  background: url(../../images/check-icon.png) no-repeat center center/contain;
+  background: url(../images/check-icon.png) no-repeat center center/contain;
   opacity: 0;
 }
 .form-checkbox__text a {
@@ -1256,7 +1256,7 @@ movie
 .movie {
   padding-top: 60px;
   padding-bottom: 60px;
-  background: url(../../images/section-bg.jpg) repeat top left/529px auto;
+  background: url(../images/section-bg.jpg) repeat top left/529px auto;
 }
 @media screen and (min-width: 768px) {
   .movie {
@@ -1892,7 +1892,7 @@ qa
   right: 16px;
   width: 9.26px;
   height: 6.834px;
-  background: url(../../images/qa-arrow.png) no-repeat center center/contain;
+  background: url(../images/qa-arrow.png) no-repeat center center/contain;
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
 }
@@ -2126,12 +2126,12 @@ gallery
 
 .gallery__prev {
   left: 0;
-  background: url(../../images/prev-icon.png) no-repeat center center/contain;
+  background: url(../images/prev-icon.png) no-repeat center center/contain;
 }
 
 .gallery__next {
   right: 0;
-  background: url(../../images/next-icon.png) no-repeat center center/contain;
+  background: url(../images/next-icon.png) no-repeat center center/contain;
 }
 
 /*!
@@ -2141,7 +2141,7 @@ contact
 .contact {
   padding-top: 60px;
   padding-bottom: 60px;
-  background: url(../../images/section-bg.jpg) repeat top left/529px auto;
+  background: url(../images/section-bg.jpg) repeat top left/529px auto;
 }
 @media screen and (min-width: 768px) {
   .contact {

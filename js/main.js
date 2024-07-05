@@ -10,6 +10,7 @@
 //     e.preventDefault();
 //     menuIcon.classList.toggle("is-checked");
 //     menuContent.classList.toggle("is-checked");
+//     document.body.classList.toggle("isScrollAllowed");
 //   });
 // }
 
@@ -20,6 +21,7 @@ $("#js-drawer-icon").on("click", function (e) {
   e.preventDefault();
   $("#js-drawer-icon").toggleClass("is-checked");
   $("#js-drawer-content").toggleClass("is-checked");
+  $("body").toggleClass("isScrollAllowed");
 });
 
 /*
@@ -141,6 +143,7 @@ $('a[href^="#"]').on("click", function (e) {
 $('#js-drawer-content a[href^="#"]').on("click", function (e) {
   $("#js-drawer-icon").removeClass("is-checked");
   $("#js-drawer-content").removeClass("is-checked");
+  $("body").removeClass("isScrollAllowed");
 });
 
 /*

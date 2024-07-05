@@ -195,6 +195,12 @@ body {
   color: var(--color-black);
   background-color: var(--color-base);
 }
+body.isScrollAllowed {
+  overflow: hidden;
+}
+body:has(dialog[open]) {
+  overflow: hidden;
+}
 
 /*!
 component > button

@@ -154,17 +154,27 @@ component > input > checkbox
 }
 
 .form-checkbox__input {
+  // フォームバリデーションを有効にするため
+  appearance: auto;
+
   // デフォルトcheckboxを非表示に
-  // height: 1px;
-  // position: absolute;
-  // clip: rect(0, 0, 0, 0);
-  // overflow: hidden;
+  height: 1px;
+  position: absolute;
+  clip: rect(0, 0, 0, 0);
+  overflow: hidden;
 
   &:checked {
     + .form-checkbox__text {
       &::after {
         opacity: 1;
       }
+    }
+  }
+
+  &:focus + .form-checkbox__text {
+    // チェックした時の外枠
+    &::before {
+      border-color: var(--color-orange);
     }
   }
 }

@@ -383,8 +383,20 @@ component > textarea
 component > input > checkbox
 ------------------------------
 */
+.form-checkbox__input {
+  -webkit-appearance: auto;
+     -moz-appearance: auto;
+          appearance: auto;
+  height: 1px;
+  position: absolute;
+  clip: rect(0, 0, 0, 0);
+  overflow: hidden;
+}
 .form-checkbox__input:checked + .form-checkbox__text::after {
   opacity: 1;
+}
+.form-checkbox__input:focus + .form-checkbox__text::before {
+  border-color: var(--color-orange);
 }
 
 .form-checkbox__text {
